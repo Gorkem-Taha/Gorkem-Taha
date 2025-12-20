@@ -34,10 +34,10 @@
 
 <table border="0" width="100%">
   <tr>
-    <td width="50%" align="center" valign="center">
-      <img src="https://i.pinimg.com/originals/dc/2c/5a/dc2c5a6049b05d027b866420bc56b331.gif" width="90%" alt="Sci-Fi HUD">
+    <td width="40%" align="center" valign="middle">
+      <img src="https://media.giphy.com/media/QssGEp9C8b8wJ3q1q2/giphy.gif" width="100%" alt="Sci-Fi HUD">
     </td>
-    <td width="50%" valign="top">
+    <td width="60%" valign="top">
       <br>
       <p>
         I am a passionate <b>Big Data Analysis student</b> at <b>Manisa Celal Bayar University</b>, operating at the intersection of massive datasets and dynamic web technologies. My goal is to build robust architectures that extract actionable intelligence and present it through compelling digital interfaces.
@@ -48,17 +48,17 @@
 
       <div align="left">
         <pre>
-<code style="color: #00f2ff;">{
-  <span style="color: #a855f7;">"subject"</span>: <span style="color: #fcd34d;">"Görkem Taha"</span>,
-  <span style="color: #a855f7;">"role"</span>: [<span style="color: #fcd34d;">"Data Scientist"</span>, <span style="color: #fcd34d;">"Web Developer"</span>],
-  <span style="color: #a855f7;">"base"</span>: <span style="color: #fcd34d;">"Manisa, Turkey"</span>,
-  <span style="color: #a855f7;">"current_focus"</span>: <span style="color: #fcd34d;">"Bridging Big Data with Web Apps"</span>,
-  <span style="color: #a855f7;">"interests"</span>: [
-    <span style="color: #fcd34d;">"🌌 Space & Sci-Fi"</span>,
-    <span style="color: #fcd34d;">"🧠 Machine Learning"</span>,
-    <span style="color: #fcd34d;">"🏗️ System Architecture"</span>
+{
+  "subject": "Görkem Taha",
+  "role": ["Data Scientist", "Web Developer"],
+  "base": "Manisa, Turkey",
+  "current_focus": "Bridging Big Data with Web Apps",
+  "interests": [
+    "🌌 Space & Sci-Fi",
+    "🧠 Machine Learning",
+    "🏗️ System Architecture"
   ]
-}</span></code>
+}
         </pre>
       </div>
     </td>
