@@ -128,7 +128,6 @@
 </div>
 
 <br>
----
 
 ## 📫 Let's Connect!
 <div align="center">
@@ -153,12 +152,13 @@
 <br>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00f2ff,112240,0a192f&height=150&section=footer&text=End%20of%20Transmission.&fontSize=30&fontColor=00f2ff&animation=twinkling&fontAlignY=70" alt="Footer" />
+ <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00f2ff,112240,0a192f&height=150&section=footer&text=See%20You%20in%20the%20Future&fontSize=30&fontColor=00f2ff&animation=twinkling&fontAlignY=70" alt="Footer" />
 </div>
 
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&label=Profile%20Views&color=FF6B6B&style=for-the-badge" alt="Profile views">
   <img src="https://img.shields.io/github/followers/Gorkem-Taha?label=Followers&style=for-the-badge&color=00C853" alt="Followers">
+<br>
 <p>
   <strong>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination 🚀</strong><br>
   <em>📊 Data Scientist • 💻 Full Stack Developer • 🗄️ Database Architect</em><br>
