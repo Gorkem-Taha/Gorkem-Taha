@@ -91,6 +91,34 @@
 </table>
 </div>
 
+<h2 align="center">🛠️ Technical Arsenal</h2>
+
+<div align="center">
+<table style="border: none; border-collapse: collapse;">
+  <tr>
+    <td align="center" style="padding: 10px;">
+      <p style="font-size: 14px; font-weight: bold; margin-bottom: 5px; color: #a855f7;">🧠 Data Science & AI</p>
+      <img src="https://skillicons.dev/icons?i=python,numpy,pandas,sklearn,matplotlib,seaborn&theme=dark&perline=6" height="40" alt="Data Science Skills"/>
+    </td>
+    <td align="center" style="padding: 10px;">
+      <p style="font-size: 14px; font-weight: bold; margin-bottom: 5px; color: #00f2ff;">🌐 Web Development</p>
+      <img src="https://skillicons.dev/icons?i=js,html,css,react,nodejs,php,tailwind&theme=dark&perline=7" height="40" alt="Web Dev Skills"/>
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" style="padding: 10px;">
+      <p style="font-size: 14px; font-weight: bold; margin-bottom: 5px; color: #fcd34d;">🗄️ Big Data & DBs</p>
+      <img src="https://skillicons.dev/icons?i=sql,mysql,postgresql,mongodb,hadoop,spark&theme=dark&perline=6" height="40" alt="Big Data Skills"/>
+    </td>
+    <td align="center" style="padding: 10px;">
+      <p style="font-size: 14px; font-weight: bold; margin-bottom: 5px; color: #ff6b6b;">⚙️ DevOps & Tools</p>
+      <img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,postman&theme=dark&perline=6" height="40" alt="Tools Skills"/>
+    </td>
+  </tr>
+</table>
+</div>
+
 <br>
 
 <div align="center">
