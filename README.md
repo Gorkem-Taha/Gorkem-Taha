@@ -128,6 +128,7 @@
 </div>
 
 <br>
+---
 
 ## 📫 Let's Connect!
 <div align="center">
@@ -156,11 +157,6 @@
 </div>
 
 <div align="center">
-  <a href="mailto:gorkemtaha1000@gmail.com">
-    <img src="https://img.shields.io/badge/Establish_Uplink-Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a192f&color=a855f7" alt="Email Me">
-  </a>
-  <br><br>
-
   <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&label=SYSTEM+VIEWS&color=00f2ff&style=flat-square" alt="profile views" />
   <p style="color: #a8b2d1; font-size: 12px;">
     <i>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination</i>
