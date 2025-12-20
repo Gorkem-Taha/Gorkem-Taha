@@ -39,31 +39,28 @@
     </td>
     <td width="60%" valign="top">
       <br>
-      <p>
-        I am a passionate <b>Big Data Analysis student</b> at <b>Manisa Celal Bayar University</b>, operating at the intersection of massive datasets and dynamic web technologies. My goal is to build robust architectures that extract actionable intelligence and present it through compelling digital interfaces.
-      </p>
+      <p>I am a passionate <b>Big Data Analysis student</b> at <b>Manisa Celal Bayar University</b>, operating at the intersection of massive datasets and dynamic web technologies. My goal is to build robust architectures that extract actionable intelligence and present it through compelling digital interfaces.</p>
       <p>
         I don't just analyze data; I engineer the pipelines that bring it to life.
       </p>
 
-      <div align="left">
-        <pre>
-{
-  "subject": "Görkem Taha",
-  "role": ["Data Scientist", "Web Developer"],
-  "base": "Manisa, Turkey",
-  "current_focus": "Bridging Big Data with Web Apps",
-  "interests": [
-    "🌌 Space & Sci-Fi",
-    "🧠 Machine Learning",
-    "🏗️ System Architecture"
-  ]
-}
-        </pre>
-      </div>
+  <div align="left">
+     <pre>
+        {
+          "subject": "Görkem Taha",
+           "role": ["Data Scientist", "Web Developer"],
+          "base": "Manisa, Turkey",
+          "current_focus": "Bridging Big Data with Web Apps",
+          "interests": [
+            "🌌 Space & Sci-Fi",
+            "🧠 Machine Learning",
+            "🏗️ System Architecture"]
+         }
+    </pre>
+    </div>
     </td>
   </tr>
-</table>
+  </table>
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
