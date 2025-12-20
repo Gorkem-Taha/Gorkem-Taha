@@ -24,7 +24,7 @@
 <br>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <img src="https://imgs.search.brave.com/R6OGTX-qyOHOb81cf02VL0KV9k9H_9s7qf333fAFDHI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhiSFZwWW1wbU9H/bGlabUptZUdzME9X/ZGlOWFptZURRNGIy/MWxPREl4WlRreGNU/YzJOSFp5TUNabGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4vWW9QRnJkaGhW/TVpjeXF3SHEwL2dp/cGh5LmdpZg.gif" width="100%">
 </div>
 
 <h2 align="center">🛸 Identity Log: The Data Explorer</h2>
