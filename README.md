@@ -138,6 +138,27 @@
     <img src="https://img.shields.io/badge/Establish_Uplink-Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a192f&color=a855f7" alt="Email Me">
   </a>
   <br><br>
+  ## 📫 Let's Connect!
+
+<div align="center">
+  <p>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00C853&center=true&vCenter=true&width=600&lines=Open+to+collaborations+and+innovations!;Let's+build+the+future+of+AI+together!" alt="Typing SVG" />
+  </p>
+  
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/📧-gorkemtaha1000@gmail.com-D14836?style=for-the-badge" alt="Email"><br>
+        <a href="mailto:erena6466@gmail.com">Email Me</a>
+      </td>
+      <td align="center">
+        <img src="https://img.shields.io/badge/💼-LinkedIn-0077B5?style=for-the-badge" alt="LinkedIn"><br>
+        <a href="https://www.linkedin.com/in/g%C3%B6rkem-taha-%C3%A7-31521028a/">Connect on LinkedIn</a>
+      </td>
+    </tr>
+  </table>
+</div>
+
   <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&label=SYSTEM+VIEWS&color=00f2ff&style=flat-square" alt="profile views" />
   <p style="color: #a8b2d1; font-size: 12px;">
     <i>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination</i>
