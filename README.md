@@ -128,18 +128,18 @@
 </div>
 
 <br>
-  ## 📫 Let's Connect!
 
+## 📫 Let's Connect!
 <div align="center">
   <p>
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00C853&center=true&vCenter=true&width=600&lines=Open+to+collaborations+and+innovations!;Let's+build+the+future+of+AI+together!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3500&pause=1000&color=26C6DA&center=true&vCenter=true&width=600&lines=Bridging+Data+with+Reality...;Building+robust+architectures...;Let's+turn+your+ideas+into+code!" alt="Typing SVG" />
   </p>
   
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/📧-gorkemtaha1000@gmail.com-D14836?style=for-the-badge" alt="Email"><br>
-        <a href="mailto:erena6466@gmail.com">Email Me</a>
+        <img src="https://img.shields.io/badge/📧-Görkem-Taha-D14836?style=for-the-badge" alt="Email"><br>
+        <a href="mailto:gorkemtaha1000@gmail.com">Email Me</a>
       </td>
       <td align="center">
         <img src="https://img.shields.io/badge/💼-LinkedIn-0077B5?style=for-the-badge" alt="LinkedIn"><br>
