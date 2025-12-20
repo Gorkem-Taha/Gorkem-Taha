@@ -155,7 +155,7 @@
   <img src="https://img.shields.io/github/followers/Gorkem-Taha?label=Followers&style=for-the-badge&color=00C853" alt="Followers">
 <br>
 <p>
-  <strong>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination 🚀</strong><br>
+  <strong>© 2025 Görkem Taha Çanakcı</strong><br>
   <em>📊 Data Scientist • 💻 Full Stack Developer • 🗄️ Database Architect</em><br>
   <em>🌌 Exploring Digital Universes • 🏗️ Engineering Robust Systems</em>
 </p>
