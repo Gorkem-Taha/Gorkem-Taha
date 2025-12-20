@@ -10,16 +10,16 @@
 
 <div align="center">
   <br>
-  <a href="https://www.linkedin.com/in/[LINKEDIN_KULLANICI_ADIN]/" target="_blank">
+  <a href="https://www.linkedin.com/in/g%C3%B6rkem-taha-%C3%A7-31521028a/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a192f" alt="LinkedIn">
   </a>
-  <a href="mailto:[EMAIL_ADRESIN]" target="_blank">
+  <a href="mailto:gorkemtaha1000@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a192f" alt="Email">
   </a>
-  <a href="https://github.com/[GITHUB_KULLANICI_ADIN]" target="_blank">
+  <a href="https://github.com/Gorkem-Taha" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0a192f" alt="GitHub">
   </a>
-    <a href="https://medium.com/@[MEDIUM_KULLANICI_ADIN]" target="_blank">
+    <a href="https://medium.com/@gorkemtaha1000" target="_blank">
     <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&labelColor=0a192f" alt="Medium">
   </a>
 </div>
@@ -111,23 +111,23 @@
   <table style="border: none;">
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=[GITHUB_KULLANICI_ADIN]&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&icon_color=a855f7&count_private=true" height="180" alt="stats graph" />
+        <img src="https://github-readme-stats.vercel.app/api?username=Gorkem-Taha&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&icon_color=a855f7&count_private=true" height="180" alt="stats graph" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[GITHUB_KULLANICI_ADIN]&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&langs_count=8" height="180" alt="languages graph" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gorkem-Taha&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&langs_count=8" height="180" alt="languages graph" />
       </td>
     </tr>
   </table>
   
   <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=[GITHUB_KULLANICI_ADIN]&theme=tokyonight&hide_border=true&background=0a192f&ring=a855f7&fire=00f2ff&currStreakNum=fcd34d" width="80%" alt="Streak Stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gorkem-Taha&theme=tokyonight&hide_border=true&background=0a192f&ring=a855f7&fire=00f2ff&currStreakNum=fcd34d" width="80%" alt="Streak Stats">
 </div>
 
 <br>
 
 <h2 align="center">📅 Coding Trajectory</h2>
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=[GITHUB_KULLANICI_ADIN]&theme=tokyo-night&hide_border=true&area=true&bg_color=0a192f&color=00f2ff" width="100%" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&theme=tokyo-night&hide_border=true&area=true&bg_color=0a192f&color=00f2ff" width="100%" alt="Activity Graph"/>
 </div>
 
 <br>
@@ -137,11 +137,11 @@
 </div>
 
 <div align="center">
-  <a href="mailto:[EMAIL_ADRESIN]">
+  <a href="mailto:gorkemtaha1000@gmail.com">
     <img src="https://img.shields.io/badge/Establish_Uplink-Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a192f&color=a855f7" alt="Email Me">
   </a>
   <br><br>
-  <img src="https://komarev.com/ghpvc/?username=[GITHUB_KULLANICI_ADIN]&label=SYSTEM+VIEWS&color=00f2ff&style=flat-square" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&label=SYSTEM+VIEWS&color=00f2ff&style=flat-square" alt="profile views" />
   <p style="color: #a8b2d1; font-size: 12px;">
     <i>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination</i>
   </p>
