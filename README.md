@@ -157,8 +157,11 @@
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&label=SYSTEM+VIEWS&color=00f2ff&style=flat-square" alt="profile views" />
-  <p style="color: #a8b2d1; font-size: 12px;">
-    <i>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination</i>
-  </p>
-</div>
+  <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&label=Profile%20Views&color=FF6B6B&style=for-the-badge" alt="Profile views">
+  <img src="https://img.shields.io/github/followers/Gorkem-Taha?label=Followers&style=for-the-badge&color=00C853" alt="Followers">
+<p>
+  <strong>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination 🚀</strong><br>
+  <em>📊 Data Scientist • 💻 Full Stack Developer • 🗄️ Database Architect</em><br>
+  <em>🌌 Exploring Digital Universes • 🏗️ Engineering Robust Systems</em>
+</p>
+</div> 
