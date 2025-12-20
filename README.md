@@ -1,93 +1,148 @@
 <div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0a192f,112240,00f2ff&height=250&section=header&text=Görkem%20Taha%20Çanakcı&fontSize=70&fontColor=00f2ff&animation=fadeIn&fontAlignY=40&desc=Architect%20of%20the%20Digital%20Universe&descAlignY=65&descSize=25&descColor=a8b2d1" width="100%" alt="Cosmic Header"/>
+</div>
+
+<div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=38&duration=2000&pause=4000&color=26C6DA&center=true&vCenter=true&width=1000&height=100&lines=Hi+there,+I'm+Görkem+Taha+Çanakcı!+👋" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=32&duration=3500&pause=1000&color=00F2FF&center=true&vCenter=true&width=900&height=70&lines=Initializing+Data+Sequence...;>+Subject:+Data+Scientist+%26+Full+Stack+Dev;>+Mission:+Fueling+Logic+with+Imagination+🚀;>+Status:+Online+and+Ready+to+Collaborate." alt="Typing SVG" />
   </a>
-    <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=38&duration=3000&pause=4000&color=26C6DA&center=true&vCenter=true&width=1000&height=100&lines=Data+Scientist+%26+Web+Dev" alt="Typing SVG" />
+</div>
+
+<div align="center">
+  <br>
+  <a href="https://www.linkedin.com/in/[LINKEDIN_KULLANICI_ADIN]/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a192f" alt="LinkedIn">
   </a>
-    <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=38&duration=4000&pause=4000&color=26C6DA&center=true&vCenter=true&width=1000&height=100&lines=Welcome+to+my+Digital+Universe+🚀" alt="Typing SVG" />
+  <a href="mailto:[EMAIL_ADRESIN]" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a192f" alt="Email">
   </a>
+  <a href="https://github.com/[GITHUB_KULLANICI_ADIN]" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0a192f" alt="GitHub">
+  </a>
+    <a href="https://medium.com/@[MEDIUM_KULLANICI_ADIN]" target="_blank">
+    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&labelColor=0a192f" alt="Medium">
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+
+<h2 align="center">🛸 Identity Log: The Data Explorer</h2>
+
+<table border="0" width="100%">
+  <tr>
+    <td width="50%" align="center" valign="center">
+      <img src="https://i.pinimg.com/originals/dc/2c/5a/dc2c5a6049b05d027b866420bc56b331.gif" width="90%" alt="Sci-Fi HUD">
+    </td>
+    <td width="50%" valign="top">
+      <br>
+      <p>
+        I am a passionate <b>Big Data Analysis student</b> at <b>Manisa Celal Bayar University</b>, operating at the intersection of massive datasets and dynamic web technologies. My goal is to build robust architectures that extract actionable intelligence and present it through compelling digital interfaces.
+      </p>
+      <p>
+        I don't just analyze data; I engineer the pipelines that bring it to life.
+      </p>
+
+      <div align="left">
+        <pre>
+<code style="color: #00f2ff;">{
+  <span style="color: #a855f7;">"subject"</span>: <span style="color: #fcd34d;">"Görkem Taha"</span>,
+  <span style="color: #a855f7;">"role"</span>: [<span style="color: #fcd34d;">"Data Scientist"</span>, <span style="color: #fcd34d;">"Web Developer"</span>],
+  <span style="color: #a855f7;">"base"</span>: <span style="color: #fcd34d;">"Manisa, Turkey"</span>,
+  <span style="color: #a855f7;">"current_focus"</span>: <span style="color: #fcd34d;">"Bridging Big Data with Web Apps"</span>,
+  <span style="color: #a855f7;">"interests"</span>: [
+    <span style="color: #fcd34d;">"🌌 Space & Sci-Fi"</span>,
+    <span style="color: #fcd34d;">"🧠 Machine Learning"</span>,
+    <span style="color: #fcd34d;">"🏗️ System Architecture"</span>
+  ]
+}</span></code>
+        </pre>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+
+<h2 align="center">🛠️ Technical Arsenal & Tech Stack</h2>
+
+<div align="center">
+  <p><i>ENGINEERING DIGITAL SOLUTIONS WITH MODERN TOOLS</i></p>
+  <br>
+</div>
+
+<table align="center" style="border-collapse: collapse; border: none;">
+  <tr>
+    <td align="center" style="border: none; padding: 10px;">
+      <h3 align="center" style="color: #a855f7;">🧠 Data Science & AI Core</h3>
+      <img src="https://skillicons.dev/icons?i=python,numpy,pandas,sklearn,matplotlib,seaborn,tensorflow,pytorch&theme=dark&perline=4" alt="Data Science Skills"/>
+    </td>
+    <td width="50" style="border: none;"></td> <td align="center" style="border: none; padding: 10px;">
+       <h3 align="center" style="color: #00f2ff;">🌐 Web Development Nexus</h3>
+      <img src="https://skillicons.dev/icons?i=js,html,css,react,nodejs,php,bootstrap,tailwind&theme=dark&perline=4" alt="Web Dev Skills"/>
+    </td>
+  </tr>
+  <tr><td colspan="3" height="30" style="border: none;"></td></tr> <tr>
+    <td align="center" style="border: none; padding: 10px;">
+      <h3 align="center" style="color: #fcd34d;">🗄️ Big Data & Databases</h3>
+       <img src="https://skillicons.dev/icons?i=sql,mysql,postgresql,mongodb,redis,hadoop,spark&theme=dark&perline=4" alt="Big Data Skills"/>
+    </td>
+    <td width="50" style="border: none;"></td> <td align="center" style="border: none; padding: 10px;">
+      <h3 align="center" style="color: #ff6b6b;">⚙️ Tools, DevOps & OS</h3>
+       <img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,postman,anaconda&theme=dark&perline=4" alt="Tools Skills"/>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+
+<h2 align="center">📡 GitHub Telemetry & Data Streams</h2>
+
+<div align="center">
+  <table style="border: none;">
+    <tr>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api?username=[GITHUB_KULLANICI_ADIN]&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&icon_color=a855f7&count_private=true" height="180" alt="stats graph" />
+      </td>
+      <td>
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[GITHUB_KULLANICI_ADIN]&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&langs_count=8" height="180" alt="languages graph" />
+      </td>
+    </tr>
+  </table>
   
+  <br>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=[GITHUB_KULLANICI_ADIN]&theme=tokyonight&hide_border=true&background=0a192f&ring=a855f7&fire=00f2ff&currStreakNum=fcd34d" width="80%" alt="Streak Stats">
 </div>
+
+<br>
+
+<h2 align="center">📅 Coding Trajectory</h2>
 <div align="center">
-  
-  <a href="mailto:[EMAIL_ADRESIN]" target="blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="email" height="30" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=[GITHUB_KULLANICI_ADIN]&theme=tokyo-night&hide_border=true&area=true&bg_color=0a192f&color=00f2ff" width="100%" alt="Activity Graph"/>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00f2ff,112240,0a192f&height=150&section=footer&text=End%20of%20Transmission.&fontSize=30&fontColor=00f2ff&animation=twinkling&fontAlignY=70" alt="Footer" />
+</div>
+
+<div align="center">
+  <a href="mailto:[EMAIL_ADRESIN]">
+    <img src="https://img.shields.io/badge/Establish_Uplink-Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a192f&color=a855f7" alt="Email Me">
   </a>
-  <a href="[LINKEDIN_LINKIN]" target="blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" height="30" />
-  </a>
-
-</div>
-
-<br/>
-
-<h3 align="center">🎓 Big Data Analysis Student | Database Enthusiast</h3>
-
-<p align="center">
-  I am a Big Data Analysis student at <b>Manisa Celal Bayar University</b>. My passion lies in extracting meaningful insights from data, building robust database architectures, and creating machine learning models. I enjoy combining my data skills with web technologies to bring data to life.
-</p>
-
-<div align="center">
-
-| 🌱 Currently Learning | 🔭 Working On | 🌌 Interests |
-|:---:|:---:|:---:|
-| **Docker & PHP** | **Data Analysis & ML Projects** | **Space, Sci-Fi, Gaming & World Cultures** |
-
-</div>
-
----
-
-<div align="center">
-
-<h3>🛠️ Languages and Tools</h3>
-
-<p><b>Languages & Databases</b></p>
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-</p>
-
-<p><b>Data Science & AI</b></p>
-<p>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Seaborn-4c4cff?style=for-the-badge&logo=python&logoColor=white" />
-</p>
-
-<p><b>Web Development</b></p>
-<p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-</p>
-
-<p><b>Tools & Visualization</b></p>
-<p>
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
-  <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-  <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" />
-</p>
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Gorkem-Taha&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gorkem-Taha&layout=compact&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="languages graph"  />
-</div>
-
-<br/>
-
-<div align="center"> 
-  <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&style=flat-square&color=26C6DA&label=PROFILE+VIEWS" alt="profile views" /> 
+  <br><br>
+  <img src="https://komarev.com/ghpvc/?username=[GITHUB_KULLANICI_ADIN]&label=SYSTEM+VIEWS&color=00f2ff&style=flat-square" alt="profile views" />
+  <p style="color: #a8b2d1; font-size: 12px;">
+    <i>© 2025 Görkem Taha Çanakcı | Fueling Logic with Imagination</i>
+  </p>
 </div>
