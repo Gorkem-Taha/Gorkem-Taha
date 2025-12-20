@@ -48,7 +48,7 @@
      <pre>
         {
           "subject": "Görkem Taha",
-           "role": ["Data Scientist", "Web Developer"],
+          "role": ["Data Scientist", "Web Developer"],
           "base": "Manisa, Turkey",
           "current_focus": "Bridging Big Data with Web Apps",
           "interests": [
