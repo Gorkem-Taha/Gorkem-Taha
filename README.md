@@ -1,9 +1,8 @@
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=1000&size=45&duration=3000&pause=1000&color=26C6DA&center=true&vCenter=true&width=900&height=100&lines=GÖRKEM+TAHA;DATA+SCIENTIST+%26+WEB+DEV;WELCOME+TO+MY+DIGITAL+UNIVERSE+🚀" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=38&duration=3000&pause=1000&color=26C6DA&center=true&vCenter=true&width=1000&height=100&lines=Hi+there,+I'm+Görkem+Taha+Çanakcı!+👋;Data+Scientist+%26+Web+Dev;Welcome+to+my+Digital+Universe+🚀" alt="Typing SVG" />
   </a>
 </div>
-
 <div align="center">
   
   <a href="mailto:[EMAIL_ADRESIN]" target="blank">
@@ -17,7 +16,6 @@
 
 <br/>
 
-<h1 align="center">Hi there, I'm Görkem Taha Çanakcı! 👋</h1>
 <h3 align="center">🎓 Big Data Analysis Student | Database Enthusiast</h3>
 
 <p align="center">
@@ -77,12 +75,12 @@
 ---
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=[GITHUB_KULLANICI_ADIN]&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[GITHUB_KULLANICI_ADIN]&layout=compact&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="languages graph"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=Gorkem-Taha&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gorkem-Taha&layout=compact&theme=radical&hide_border=true&bg_color=0d1117" height="180" alt="languages graph"  />
 </div>
 
 <br/>
 
 <div align="center"> 
-  <img src="https://komarev.com/ghpvc/?username=[GITHUB_KULLANICI_ADIN]&style=flat-square&color=26C6DA&label=PROFILE+VIEWS" alt="profile views" /> 
+  <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&style=flat-square&color=26C6DA&label=PROFILE+VIEWS" alt="profile views" /> 
 </div>
