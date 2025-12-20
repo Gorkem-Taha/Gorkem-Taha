@@ -138,7 +138,7 @@
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/📧-Görkem-Taha-D14836?style=for-the-badge" alt="Email"><br>
+        <img src="https://img.shields.io/badge/📧-EMAIL-style=for-the-badge" alt="Email"><br>
         <a href="mailto:gorkemtaha1000@gmail.com">Email Me</a>
       </td>
       <td align="center">
