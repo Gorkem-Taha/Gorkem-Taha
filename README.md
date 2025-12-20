@@ -32,7 +32,7 @@
 <table border="0" width="100%">
   <tr>
     <td width="40%" align="center" valign="middle">
-      <img src="https://imgs.search.brave.com/R6OGTX-qyOHOb81cf02VL0KV9k9H_9s7qf333fAFDHI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhiSFZwWW1wbU9H/bGlabUptZUdzME9X/ZGlOWFptZURRNGIy/MWxPREl4WlRreGNU/YzJOSFp5TUNabGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4vWW9QRnJkaGhW/TVpjeXF3SHEwL2dp/cGh5LmdpZg.gif" width="100%" alt="Sci-Fi HUD">
+      <img src="https://imgs.search.brave.com/fyBwcn2NYSErSq6f-QbcM3LLq3Tbv-9XyPHgt-xmAlE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTAuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhjR1EyZFhKaWEy/dGpNR3Q0WkdOd1kz/WnllREEwTkdWcU9H/MDNOakZrT0RKc2NY/bDVZVGxvTkNabGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4vTGFWcDBBeXFS/NWJHc0M1Q2JtL2dp/cGh5LmdpZg.gif" width="100%" alt="Sci-Fi HUD">
     </td>
     <td width="60%" valign="top">
       <br>
