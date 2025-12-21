@@ -119,7 +119,7 @@
 
 <h2 align="center">📅 Coding Trajectory</h2>
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&theme=tokyo-night&hide_border=true&area=true&bg_color=0a192f&color=00f2ff" width="100%" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&cache_buster=1&theme=tokyo-night&hide_border=true&area=true&bg_color=0a192f&color=00f2ff" width="100%" alt="Activity Graph"/>
 </div>
 
 <br>
