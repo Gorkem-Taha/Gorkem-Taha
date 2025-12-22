@@ -103,10 +103,10 @@
   <table style="border: none;">
     <tr>
       <td>
-        <img src="https://my-github-stats-nine-nu.vercel.app/api?username=Gorkem-Taha&count_private=true&show_icons=true&hide_border=true&bg_color=050505&title_color=00ffea&icon_color=ff0055&text_color=c9d1d9&cache_buster=14" height="180" alt="stats graph" />
+        <img src="https://my-github-stats-nine-nu.vercel.app/api?username=Gorkem-Taha&count_private=true&show_icons=true&hide_border=true&bg_color=050505&title_color=00ffea&icon_color=ff0055&text_color=c9d1d9&exclude_repo=my-github-stats&cache_buster=15" height="180" alt="stats graph" />
       </td>
       <td>
-        <img src="https://my-github-stats-nine-nu.vercel.app/api/top-langs/?username=Gorkem-Taha&count_private=true&layout=compact&hide_border=true&bg_color=050505&title_color=00ffea&text_color=c9d1d9&langs_count=8&cache_buster=14" height="180" alt="languages graph" />
+        <img src="https://my-github-stats-nine-nu.vercel.app/api/top-langs/?username=Gorkem-Taha&count_private=true&layout=compact&hide_border=true&bg_color=050505&title_color=00ffea&text_color=c9d1d9&langs_count=8&exclude_repo=my-github-stats&cache_buster=15" height="180" alt="languages graph" />
       </td>
     </tr>
   </table>
