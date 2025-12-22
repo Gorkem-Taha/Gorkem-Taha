@@ -103,23 +103,23 @@
   <table style="border: none;">
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Gorkem-Taha&cache_buster=8&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&icon_color=a855f7&count_private=true" height="180" alt="stats graph" />
+        <img src="https://github-readme-stats.vercel.app/api?username=Gorkem-Taha&cache_buster=3&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&icon_color=a855f7&count_private=true" height="180" alt="stats graph" />
       </td>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gorkem-Taha&cache_buster=8&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&langs_count=8" height="180" alt="languages graph" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gorkem-Taha&cache_buster=3&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a192f&title_color=00f2ff&langs_count=8" height="180" alt="languages graph" />
       </td>
     </tr>
   </table>
   
   <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gorkem-Taha&cache_buster=8&theme=tokyonight&hide_border=true&background=0a192f&ring=a855f7&fire=00f2ff&currStreakNum=fcd34d" width="80%" alt="Streak Stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gorkem-Taha&cache_buster=3&theme=tokyonight&hide_border=true&background=0a192f&ring=a855f7&fire=00f2ff&currStreakNum=fcd34d" width="80%" alt="Streak Stats">
 </div>
 
 <br>
 
 <h2 align="center">📅 Coding Trajectory</h2>
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&cache_buster=8&theme=tokyo-night&hide_border=true&area=true&bg_color=0a192f&color=00f2ff" width="100%" alt="Activity Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&cache_buster=3&theme=tokyo-night&hide_border=true&area=true&bg_color=0a192f&color=00f2ff" width="100%" alt="Activity Graph"/>
 </div>
 
 <br>
