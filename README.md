@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0a192f,112240,00f2ff&height=250&section=header&text=Görkem%20Taha%20Çanakcı&fontSize=70&fontColor=00f2ff&animation=fadeIn&fontAlignY=40&desc=Architect%20of%20the%20Digital%20Universe&descAlignY=65&descSize=25&descColor=a8b2d1" width="100%" alt="Cosmic Header"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0a192f,112240,00f2ff&height=250&section=header&text=Görkem%20Taha&fontSize=70&fontColor=00f2ff&animation=fadeIn&fontAlignY=40&desc=Architect%20of%20the%20Digital%20Universe&descAlignY=65&descSize=25&descColor=a8b2d1" width="100%" alt="Cosmic Header"/>
 </div>
 
 <div align="center">
