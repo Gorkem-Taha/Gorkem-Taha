@@ -157,7 +157,7 @@
 <br>
 <p>
   <strong>© 2025 Görkem Taha Çanakcı</strong><br>
-  <em>📊 Data Scientist • 💻 Full Stack Developer • 🗄️ Database Architect</em><br>
+  <em>📊 Data Scientist • 💻 Vibe Coder • 🗄️ Database Architect</em><br>
   <em>🌌 Exploring Digital Universes • 🏗️ Engineering Robust Systems</em>
 </p>
 </div> 
