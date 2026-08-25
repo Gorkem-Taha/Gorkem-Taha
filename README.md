@@ -111,18 +111,6 @@
     </tr>
   </table>
   
-  <br>
-  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gorkem-Taha&hide_border=true&background=050505&ring=ff0055&fire=00ffea&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00ffea&sideLabels=00ffea&dates=c9d1d9" width="80%" alt="Streak Stats">
-</div>
-
-<br>
-
-<h2 align="center">📅 Coding Trajectory</h2>
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&hide_border=true&area=true&bg_color=050505&color=00ffea&line=ff0055&point=ffffff" width="100%" alt="Activity Graph"/>
-</div>
-
 <br>
 
 ## 📫 Let's Connect!
