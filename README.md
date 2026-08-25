@@ -20,71 +20,28 @@
 
 <hr/>
 
-### 👨‍💻 About Me
+### 👨‍💻 Identity Log
 
 <table>
   <tr>
-    <td width="35%" align="center" valign="middle">
-      <!-- Kendi avatarını veya saydamlaştırılmış GIF'ini buraya ekleyebilirsin -->
-      <img src="https://images.weserv.nl/?url=https://github.com/Gorkem-Taha.png&w=180&h=180&mask=circle" width="160" alt="Avatar"/>
+    <td width="50%" align="center" valign="middle">
+      <!-- Hazırladığın terminal GIF'ini buraya bağlayabilirsin. Şimdilik geçici HUD yerleştirildi: -->
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2R4bXNnbTloNGRwY3kyM2t5cTJnNHBxaDRrbWRsZWFxcTh2czNjeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="100%" alt="Terminal UI"/>
     </td>
-    <td width="65%" valign="top">
+    <td width="50%" valign="top">
       <p>I operate at the intersection of <b>Big Data</b>, <b>Machine Learning</b>, and <b>scalable web systems</b>. Focused on extracting actionable intelligence from complex datasets and delivering them through robust, dynamic interfaces.</p>
       
-      ```json
-      {
-        "location": "Manisa, Turkey",
-        "education": "Big Data Analysis @ MCBU",
-        "core_domains": ["Data Engineering", "Applied ML", "Full-Stack Dev"],
-        "architecture_focus": ["High-Performance Backend", "MLOps"]
-      }
-      ```
-    </td>
-  </tr>
-</table>
-
-<hr/>
-
-### 🛠️ Tech Stack & Ecosystem
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,react,fastapi,postgres,supabase,docker,git&perline=8" alt="Tech Stack" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/XGBoost-EB1000?style=flat-square&logo=xgboost&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
-</div>
-
-<hr/>
-
-### 📡 GitHub Activity & Metrics
-
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Gorkem-Taha&show_icons=true&hide_border=true&bg_color=0a192f&title_color=00f2ff&icon_color=00f2ff&text_color=a8b2d1&count_private=true" height="165" alt="Stats" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gorkem-Taha&layout=compact&hide_border=true&bg_color=0a192f&title_color=00f2ff&text_color=a8b2d1&langs_count=6" height="165" alt="Languages" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-<hr/>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00f2ff,112240,0a192f&height=120&section=footer" width="100%" alt="Footer" />
-  <br/>
-  <img src="https://komarev.com/ghpvc/?username=Gorkem-Taha&label=Profile%20Views&color=00f2ff&style=flat-square" alt="Profile views">
-  <img src="https://img.shields.io/github/followers/Gorkem-Taha?label=Followers&style=flat-square&color=00f2ff" alt="Followers">
-  <br/><br/>
-  <sub>© 2026 Görkem Taha Çanakcı • Engineering Scalable Data Systems</sub>
-</div>
+```json
+{
+  "location": "Manisa, Turkey",
+  "education": "Big Data Analysis @ MCBU",
+  "core_domains": [
+    "Data Engineering", 
+    "Applied ML", 
+    "Full-Stack Dev"
+  ],
+  "architecture_focus": [
+    "High-Performance Backend", 
+    "MLOps"
+  ]
+}
