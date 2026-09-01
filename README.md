@@ -36,7 +36,7 @@
     </td>
     <td width="60%" valign="top">
       <br>
-      <p>I am a passionate <b>Big Data Analysis student</b> at <b>Manisa Celal Bayar University</b>, operating at the intersection of massive datasets and dynamic web technologies. My goal is to build robust architectures that extract actionable intelligence and present it through compelling digital interfaces.</p>
+      <p>I am a passionate <b>Big Data Analysis </b> operating at the intersection of massive datasets and dynamic web technologies. My goal is to build robust architectures that extract actionable intelligence and present it through compelling digital interfaces.</p>
       <p>
         I don't just analyze data; I engineer the pipelines that bring it to life.
       </p>
