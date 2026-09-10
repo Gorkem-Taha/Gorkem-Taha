@@ -9,22 +9,24 @@
 <br/>
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/g%C3%B6rkem-taha-%C3%A7-31521028a/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  <a href="https://www.linkedin.com/in/g%C3%B6rkem-taha-%C3%A7-31521028a/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="32" />
   </a>
   &nbsp;
-  <a href="https://owog.dev">
-    <img src="https://img.shields.io/badge/owog.dev-000000?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/>
+  <a href="https://owog.dev" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-owog.dev-58A6FF?style=for-the-badge&logo=safari&logoColor=white&labelColor=0d1117" alt="Portfolio" height="32" />
   </a>
   &nbsp;
-  <a href="https://medium.com/@gorkemtaha1000">
-    <img src="https://img.shields.io/badge/Medium-ffffff?style=flat-square&logo=medium&logoColor=black" alt="Medium"/>
+  <a href="https://medium.com/@gorkemtaha1000" target="_blank">
+    <img src="https://img.shields.io/badge/Medium-Writing-20232a?style=for-the-badge&logo=medium&logoColor=58a6ff&labelColor=0d1117" alt="Medium" height="32" />
   </a>
   &nbsp;
   <a href="mailto:gorkemtaha1000@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+    <img src="https://img.shields.io/badge/Gmail-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Gmail" height="32" />
   </a>
 </div>
+
+<br/>
 
 <div align="center">
   <img src="./divider2.svg?v=neon1" alt="divider" width="100%" />
