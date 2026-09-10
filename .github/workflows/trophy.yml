@@ -23,21 +23,19 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Kendi güncel forkladığın repoyu ve branch'i klonluyoruz
-          git clone -b VegaDeftwing-master https://github.com/Gorkem-Taha/github-profile-trophy.git /tmp/trophy-server
+          # Token ile kimlik doğrulayarak private repoyu klonluyoruz
+          git clone -b VegaDeftwing-master https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Gorkem-Taha/github-profile-trophy.git /tmp/trophy-server
           cd /tmp/trophy-server
           
-          # README'deki gibi yerel debug sunucusunu arka planda başlatıyoruz
+          # Yerel debug sunucusunu başlatıyoruz
           deno run --allow-net --allow-read --allow-env debug.ts &
           SERVER_PID=$!
           
-          # Sunucunun başlaması için bekle
           sleep 6
           
-          # SVG çıktısını alıp ana repoya yazıyoruz
+          # SVG çıktısını alıyoruz
           curl -s "http://localhost:8080/?username=${{ github.repository_owner }}&theme=onedark" -o $GITHUB_WORKSPACE/trophy.svg
           
-          # Sunucuyu kapat
           kill $SERVER_PID || true
 
       - name: Check Generated File
