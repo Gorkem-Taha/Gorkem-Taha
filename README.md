@@ -93,7 +93,9 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 </div>
 
 <br/>
-![Trophies](./trophy.svg)
+<p align="center">
+  <img src="./trophy.svg" alt="GitHub Profile Trophies" />
+</p>
 <br/>
 
 <div align="center">
