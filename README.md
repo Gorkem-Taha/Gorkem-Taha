@@ -9,21 +9,10 @@
 <br/>
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/g%C3%B6rkem-taha-%C3%A7-31521028a/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" height="32" />
-  </a>
-  &nbsp;
-  <a href="https://owog.dev" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-owog.dev-58A6FF?style=for-the-badge&logo=safari&logoColor=white&labelColor=0d1117" alt="Portfolio" height="32" />
-  </a>
-  &nbsp;
-  <a href="https://medium.com/@gorkemtaha1000" target="_blank">
-    <img src="https://img.shields.io/badge/Medium-Writing-20232a?style=for-the-badge&logo=medium&logoColor=58a6ff&labelColor=0d1117" alt="Medium" height="32" />
-  </a>
-  &nbsp;
-  <a href="mailto:gorkemtaha1000@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Gmail" height="32" />
-  </a>
+  <a href="https://www.linkedin.com/in/g%C3%B6rkem-taha-%C3%A7-31521028a/"><img src="./badge-linkedin.svg" height="34"/></a> &nbsp;
+  <a href="https://owog.dev"><img src="./badge-portfolio.svg" height="34"/></a> &nbsp;
+  <a href="https://medium.com/@gorkemtaha1000"><img src="./badge-medium.svg" height="34"/></a> &nbsp;
+  <a href="mailto:gorkemtaha1000@gmail.com"><img src="./badge-gmail.svg" height="34"/></a>
 </div>
 
 <br/>
