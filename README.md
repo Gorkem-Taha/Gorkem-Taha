@@ -38,10 +38,6 @@ I'm drawn to the aesthetics of art, the stories inside games, and the logical de
 
 Away from noise, I create. On my own terms, I move forward — a little more curious each day than the one before.
 
-- 🔭 Currently: Large-scale data analysis · Full-stack portfolio at [owog.dev](https://owog.dev)
-- 🧠 Focus: Ensemble ML · SHAP explainability · Scalable backends
-- 🎮 Off-screen: Art · Games · Cinema
-
 ---
 
 ## GitHub Stats
