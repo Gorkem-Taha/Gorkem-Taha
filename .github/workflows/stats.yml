@@ -37,11 +37,26 @@ jobs:
         run: |
           curl -f -s "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" -o streak.svg
 
-      # 4. Dosyaları Repoya Ekle
+      # 4. Activity Graph Kartı (Yerel Metrics Action)
+      - name: Generate Activity Graph
+        uses: lowlighter/metrics@latest
+        with:
+          filename: activity-graph.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: ${{ github.repository_owner }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
+          config_timezone: Europe/Istanbul
+          output_action: none
+
+      # 5. Tüm SVG'leri Repoya Ekle
       - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add stats.svg top-langs.svg streak.svg
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update profile stats and streak"
+          git add stats.svg top-langs.svg streak.svg activity-graph.svg
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update profile stats and activity graph"
           git push
