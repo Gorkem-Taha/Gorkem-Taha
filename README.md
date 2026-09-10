@@ -1,28 +1,28 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f1e,50:1a1f3a,100:0d1117&height=220&section=header&text=Görkem%20Taha&fontSize=62&fontColor=ffffff&animation=fadeIn&fontAlignY=42&desc=Big%20Data%20Analyst%20%C2%B7%20Backend%20Developer%20%C2%B7%20Builder&descAlignY=65&descSize=18&descColor=8b949e" width="100%" alt="Header"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0d2137,100:0d1117&height=200&section=header&text=Görkem%20Taha&fontSize=58&fontColor=58a6ff&animation=fadeIn&fontAlignY=40&desc=Big%20Data%20Analyst%20%E2%80%A2%20Backend%20Developer%20%E2%80%A2%20Builder&descAlignY=65&descSize=17&descColor=8b949e" width="100%" alt="header"/>
 </div>
 
 <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3200&pause=900&color=58A6FF&center=true&vCenter=true&width=700&height=55&lines=Turning+raw+data+into+decisions.;Backend+systems+that+scale.;ML+pipelines+%2B+SHAP+interpretability.;Open+source+%7C+Privacy-first+tools.;Always+building+something+new." alt="Typing" />
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=650&height=50&lines=Turning+raw+data+into+decisions.;Backend+systems+that+scale.;ML+%E2%80%A2+SHAP+%E2%80%A2+XGBoost+%E2%80%A2+LightGBM;Privacy-first+tools.+Zero+cloud+overhead.;Always+shipping+something+new." alt="typing"/>
 </div>
+
+<br/>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/g%C3%B6rkem-taha-%C3%A7-31521028a/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   &nbsp;
   <a href="https://owog.dev">
-    <img src="https://img.shields.io/badge/owog.dev-000000?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio">
+    <img src="https://img.shields.io/badge/owog.dev-000000?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/>
   </a>
   &nbsp;
   <a href="https://medium.com/@gorkemtaha1000">
-    <img src="https://img.shields.io/badge/Medium-12100E?style=flat-square&logo=medium&logoColor=white" alt="Medium">
+    <img src="https://img.shields.io/badge/Medium-ffffff?style=flat-square&logo=medium&logoColor=black" alt="Medium"/>
   </a>
   &nbsp;
   <a href="mailto:gorkemtaha1000@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </div>
 
@@ -32,16 +32,16 @@
 
 ## About
 
-Big Data & Backend geliştirici. Makine öğrenmesi modellerini yorumlanabilir hale getirmek, yüksek performanslı backend sistemleri kurmak ve lokal-first araçlar üretmek üzerine odaklanıyorum.
+Büyük veri analizi ve backend geliştirme üzerine çalışıyorum. Makine öğrenmesi modellerini SHAP ile yorumlanabilir hale getirmek, ölçeklenebilir backend sistemleri kurmak ve lokal-first araçlar üretmek odak alanlarım.
 
-- 🔭 Şu an: Büyük ölçekli veri analizi & full-stack portfolio projesi
-- 🧠 Alan: Ensemble ML · SHAP explainability · Next.js · Firebase · PostgreSQL
+- 🔭 Şu an: Büyük ölçekli veri analizi · Full-stack portfolio projesi
+- 🧠 Uzmanlık: Ensemble ML · SHAP explainability · Next.js · Firebase · PostgreSQL
 - 🛠 Felsefe: Sade araçlar, ölçülebilir çıktılar, sıfır gereksiz bağımlılık
 - 🌐 Web: [owog.dev](https://owog.dev)
 
 ---
 
-## Tech Stack
+## Stack
 
 **Data & ML**
 
@@ -49,8 +49,9 @@ Big Data & Backend geliştirici. Makine öğrenmesi modellerini yorumlanabilir h
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logo=xgboost&logoColor=white)
-![LightGBM](https://img.shields.io/badge/LightGBM-02A676?style=flat-square&logo=lightgbm&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-02A676?style=flat-square&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-5C4033?style=flat-square&logoColor=white)
 
 **Backend & Web**
 
@@ -73,47 +74,76 @@ Big Data & Backend geliştirici. Makine öğrenmesi modellerini yorumlanabilir h
 
 ## GitHub Stats
 
-<div align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Gorkem-Taha&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&custom_title=Stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gorkem-Taha&layout=compact&theme=github_dark&hide_border=true&langs_count=8&custom_title=Languages" />
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=Gorkem-Taha&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="GitHub Streak" />
-
-</div>
+<table align="center" border="0" cellspacing="0" cellpadding="8">
+  <tr>
+    <td align="center">
+      <img src="https://my-github-stats-nine-nu.vercel.app/api?username=Gorkem-Taha&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&custom_title=Stats&bg_color=0d1117" height="170" alt="stats"/>
+    </td>
+    <td align="center">
+      <img src="https://my-github-stats-nine-nu.vercel.app/api/top-langs/?username=Gorkem-Taha&layout=compact&theme=github_dark&hide_border=true&langs_count=8&custom_title=Languages&bg_color=0d1117" height="170" alt="langs"/>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Gorkem-Taha&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&row=1&column=6" alt="Trophies" />
-
+  <img src="https://streak-stats.demolab.com?user=Gorkem-Taha&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="streak"/>
 </div>
+
+<br/>
 
 <div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&hide_border=true" alt="Activity Graph" width="100%"/>
-
+  <img src="https://github-profile-trophy.vercel.app/?username=Gorkem-Taha&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" alt="trophies"/>
 </div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&area_color=1f6feb&hide_border=true&custom_title=Contribution%20Graph" width="100%" alt="activity"/>
+</div>
+
+---
+
+## Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gorkem-Taha/Gorkem-Taha/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gorkem-Taha/Gorkem-Taha/output/github-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/Gorkem-Taha/Gorkem-Taha/output/github-snake-dark.svg" width="100%" alt="snake"/>
+</picture>
 
 ---
 
 ## Featured Projects
 
-<div align="center">
-
-[![G-Toolbox](https://github-readme-stats.vercel.app/api/pin/?username=Gorkem-Taha&repo=G-Toolbox&theme=github_dark&hide_border=true&description_lines_count=2)](https://github.com/Gorkem-Taha/G-Toolbox)
-[![Machine-Failure-Detection-Ensemble](https://github-readme-stats.vercel.app/api/pin/?username=Gorkem-Taha&repo=Machine-Failure-Detection-Ensemble&theme=github_dark&hide_border=true&description_lines_count=2)](https://github.com/Gorkem-Taha/Machine-Failure-Detection-Ensemble)
-
-[![VDOWNS-PRIME](https://github-readme-stats.vercel.app/api/pin/?username=Gorkem-Taha&repo=VDOWNS-PRIME&theme=github_dark&hide_border=true&description_lines_count=2)](https://github.com/Gorkem-Taha/VDOWNS-PRIME)
-[![MindCipher](https://github-readme-stats.vercel.app/api/pin/?username=Gorkem-Taha&repo=MindCipher&theme=github_dark&hide_border=true&description_lines_count=2)](https://github.com/Gorkem-Taha/MindCipher)
-
-</div>
+<table align="center" border="0" cellspacing="0" cellpadding="6">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Gorkem-Taha/G-Toolbox">
+        <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=G-Toolbox&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="G-Toolbox"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Gorkem-Taha/Machine-Failure-Detection-Ensemble">
+        <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=Machine-Failure-Detection-Ensemble&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="Machine Failure"/>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Gorkem-Taha/VDOWNS-PRIME">
+        <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=VDOWNS-PRIME&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="VDOWNS-PRIME"/>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Gorkem-Taha/MindCipher">
+        <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=MindCipher&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="MindCipher"/>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1a1f3a&height=100&section=footer" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:0d2137&height=90&section=footer" width="100%"/>
 </div>
