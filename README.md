@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=650&height=50&lines=Turning+raw+data+into+decisions.;Backend+systems+that+scale.;ML+%E2%80%A2+SHAP+%E2%80%A2+XGBoost+%E2%80%A2+LightGBM;Privacy-first+tools.+Zero+cloud+overhead.;Always+shipping+something+new." alt="typing"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=750&height=50&lines=Architecting+high-performance+backend+systems.;Turning+complex+problems+into+simple+tools.;Privacy-first.+Zero+unnecessary+cloud+overhead.;Moving+forward+%E2%80%94+curious+each+day." alt="typing"/>
 </div>
 
 <br/>
