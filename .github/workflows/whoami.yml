@@ -15,81 +15,96 @@ jobs:
       - name: Generate WhoAmI Terminal SVG
         run: |
           python3 - << 'EOF'
-          w, h = 800, 310
+          w, h = 820, 340
           
           svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="100%" height="{h}">
             <defs>
               <style>
-                @keyframes typeLine1 {{ 0% {{ opacity: 0; }} 5% {{ opacity: 1; }} 100% {{ opacity: 1; }} }}
-                @keyframes typeLine2 {{ 0%, 18% {{ opacity: 0; }} 24% {{ opacity: 1; }} 100% {{ opacity: 1; }} }}
-                @keyframes typeLine3 {{ 0%, 38% {{ opacity: 0; }} 44% {{ opacity: 1; }} 100% {{ opacity: 1; }} }}
-                @keyframes typeLine4 {{ 0%, 58% {{ opacity: 0; }} 64% {{ opacity: 1; }} 100% {{ opacity: 1; }} }}
-                @keyframes blink {{ 0%, 100% {{ opacity: 1; }} 50% {{ opacity: 0; }} }}
+                @keyframes revealText {{
+                  from {{ clip-path: inset(0 100% 0 0); }}
+                  to {{ clip-path: inset(0 0 0 0); }}
+                }}
+                @keyframes blink {{
+                  0%, 100% {{ opacity: 1; }}
+                  50% {{ opacity: 0; }}
+                }}
 
                 .term-bg {{ fill: #0d1117; rx: 8px; }}
                 .term-bar {{ fill: #161b22; }}
                 .dot-red {{ fill: #ff5f56; }}
                 .dot-yellow {{ fill: #ffbd2e; }}
                 .dot-green {{ fill: #27c93f; }}
-                
+
                 .font-code {{
-                  font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+                  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
                   font-size: 13px;
+                  letter-spacing: 0.2px;
                 }}
-                
+
                 .c-user {{ fill: #58a6ff; font-weight: 600; }}
                 .c-path {{ fill: #8b949e; }}
-                .c-cmd {{ fill: #f0f6fc; }}
-                .c-key {{ fill: #7ee787; font-weight: 600; }}
+                .c-cmd  {{ fill: #f0f6fc; font-weight: 500; }}
                 .c-text {{ fill: #c9d1d9; }}
-                .c-muted {{ fill: #8b949e; font-style: italic; }}
-                .cursor {{ fill: #58a6ff; animation: blink 1s infinite; }}
+                .c-blue {{ fill: #58a6ff; }}
+                .cursor {{ fill: #58a6ff; animation: blink 0.9s infinite; }}
 
-                .line-1 {{ animation: typeLine1 1s forwards; }}
-                .line-2 {{ animation: typeLine2 1.5s forwards; }}
-                .line-3 {{ animation: typeLine3 2s forwards; }}
-                .line-4 {{ animation: typeLine4 2.5s forwards; }}
+                /* Harf harf soldan sağa yumuşak daktilo animasyonları */
+                .anim-cmd   {{ animation: revealText 1.4s steps(22, end) 0.3s both; }}
+                .anim-line1 {{ animation: revealText 2.6s steps(55, end) 1.8s both; }}
+                .anim-line2 {{ animation: revealText 3.0s steps(60, end) 4.5s both; }}
+                .anim-line3 {{ animation: revealText 3.0s steps(60, end) 7.6s both; }}
+                .anim-line4 {{ animation: revealText 3.0s steps(60, end) 10.7s both; }}
+                .anim-line5 {{ animation: revealText 2.4s steps(48, end) 13.8s both; }}
+                .anim-line6 {{ animation: revealText 2.4s steps(48, end) 16.3s both; }}
+                .anim-final {{ animation: revealText 0.8s steps(15, end) 18.8s both; }}
               </style>
             </defs>
 
             <!-- Arka Plan -->
             <rect width="{w}" height="{h}" class="term-bg"/>
-            
+
             <!-- Terminal Üst Barı -->
             <path d="M 0,8 A 8,8 0 0,1 8,0 L {w-8},0 A 8,8 0 0,1 {w},8 L {w},34 L 0,34 Z" class="term-bar"/>
             <circle cx="20" cy="17" r="5" class="dot-red"/>
             <circle cx="36" cy="17" r="5" class="dot-yellow"/>
             <circle cx="52" cy="17" r="5" class="dot-green"/>
-            <text x="{w/2}" y="21" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" text-anchor="middle">gorkemtaha — zsh — 800x310</text>
+            <text x="{w/2}" y="21" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,sans-serif" font-size="11" text-anchor="middle">root@owog</text>
 
-            <!-- Komut Satırı -->
-            <g transform="translate(25, 65)" class="font-code line-1">
+            <!-- Komut Girişi -->
+            <g transform="translate(25, 66)" class="font-code anim-cmd">
               <text y="0">
-                <tspan class="c-user">owog@core</tspan><tspan class="c-path">:~$</tspan> <tspan class="c-cmd">whoami --verbose</tspan>
+                <tspan class="c-user">root@owog</tspan><tspan class="c-path">:~$</tspan> <tspan class="c-cmd">cat about.txt</tspan>
               </text>
             </g>
 
-            <!-- Çıktı Satırları -->
-            <g transform="translate(25, 105)" class="font-code line-2">
-              <text y="0">
-                <tspan class="c-key">[identity]</tspan> <tspan class="c-text">Görkem Taha — OWog in the digital realm. Exploring code, logic and data.</tspan>
-              </text>
+            <!-- Metin Gövdesi -->
+            <g transform="translate(25, 102)" class="font-code c-text anim-line1">
+              <text y="0">I'm Görkem Taha — <tspan class="c-blue">OWog</tspan> in the digital world. I spend every moment learning and exploring.</text>
             </g>
 
-            <g transform="translate(25, 145)" class="font-code line-3">
-              <text y="0">
-                <tspan class="c-key">[philosophy]</tspan> <tspan class="c-text">Coding isn't just lines; it's the elegance when a system resolves cleanly.</tspan>
-              </text>
-              <text y="24" class="c-muted">
-                Attention to detail once shaped in art, now engineered into data pipelines.
-              </text>
+            <g transform="translate(25, 138)" class="font-code c-text anim-line2">
+              <text y="0">I'm drawn to the aesthetics of art, the stories inside games, and the logical depth of software.</text>
             </g>
 
-            <g transform="translate(25, 210)" class="font-code line-4">
+            <g transform="translate(25, 164)" class="font-code c-text anim-line3">
+              <text y="0">For me, coding isn't just writing lines — it's the elegance you find when a problem finally breaks open cleanly.</text>
+            </g>
+
+            <g transform="translate(25, 190)" class="font-code c-text anim-line4">
+              <text y="0">The same attention to detail I once put into my drawings, I now put into data pipelines and system architecture.</text>
+            </g>
+
+            <g transform="translate(25, 230)" class="font-code c-text anim-line5">
+              <text y="0">Away from noise, I create.</text>
+            </g>
+
+            <g transform="translate(25, 256)" class="font-code c-text anim-line6">
+              <text y="0">On my own terms, I move forward — a little more curious each day than the one before.</text>
+            </g>
+
+            <!-- Bitiş Komut Satırı ve İmleç -->
+            <g transform="translate(25, 298)" class="font-code anim-final">
               <text y="0">
-                <tspan class="c-key">[status]</tspan> <tspan class="c-text">Away from noise, building on own terms. Constantly shipping.</tspan>
-              </text>
-              <text y="30">
                 <tspan class="c-user">owog@core</tspan><tspan class="c-path">:~$</tspan> <tspan class="cursor">_</tspan>
               </text>
             </g>
@@ -97,13 +112,13 @@ jobs:
 
           with open("whoami.svg", "w", encoding="utf-8") as f:
               f.write(svg)
-          print("whoami.svg terminal kartı üretildi.")
+          print("Yeni akici whoami.svg uretildi.")
           EOF
 
       - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add whoami.svg
-          git commit -m "chore: update whoami terminal card" || echo "No changes"
+          git add -f whoami.svg
+          git commit -m "chore: update whoami terminal card with smooth typewriter" || echo "No changes"
           git push
