@@ -33,7 +33,7 @@
 </div>
 
 ### Github Stats
-
+--
 <div align="center">
   <img src="./stats.svg" alt="GitHub Stats" width="450" />
   &nbsp;&nbsp;
