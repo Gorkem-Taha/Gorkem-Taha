@@ -93,11 +93,7 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 </div>
 
 <br/>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Gorkem-Taha&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=6" alt="trophies"/>
-</div>
-
+[![trophy](https://github-profile-trophy-exad6xfc8-gorkem-tahas-projects.vercel.app/?username=Gorkem-Taha)](https://github.com/ryo-ma/github-profile-trophy)
 <br/>
 
 <div align="center">
