@@ -81,9 +81,9 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 ## GitHub Stats
 
 <div align="center">
-  <img src="https://my-github-stats-nine-nu.vercel.app/api?username=Gorkem-Taha&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&custom_title=GitHub%20Stats&bg_color=0d1117&card_width=450" alt="stats"/>
+  <img src="./stats.svg" alt="GitHub Stats" width="450" />
   &nbsp;&nbsp;
-  <img src="https://my-github-stats-nine-nu.vercel.app/api/top-langs/?username=Gorkem-Taha&layout=compact&theme=github_dark&hide_border=true&langs_count=8&custom_title=Top%20Languages&bg_color=0d1117&card_width=350" alt="langs"/>
+  <img src="./top-langs.svg" alt="Top Languages" width="350" />
 </div>
 
 <br/>
