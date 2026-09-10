@@ -95,9 +95,9 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 </div>
 
 <br/>
-<p align="center">
-  <img src="./trophy.svg" alt="GitHub Profile Trophies" />
-</p>
+<div align="center">
+  <img src="./trophy.svg?v=2" alt="GitHub Trophies" />
+</div>
 <br/>
 
 <div align="center">
