@@ -84,23 +84,14 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 
 ## Featured Projects
 
-<div align="center">
+## Featured Projects
 
-<a href="https://github.com/Gorkem-Taha/G-Toolbox">
-  <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=G-Toolbox&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="G-Toolbox"/>
-</a>
-<a href="https://github.com/Gorkem-Taha/Machine-Failure-Detection-Ensemble">
-  <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=Machine-Failure-Detection-Ensemble&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="Machine Failure Detection"/>
-</a>
-
-<a href="https://github.com/Gorkem-Taha/VDOWNS-PRIME">
-  <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=VDOWNS-PRIME&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="VDOWNS-PRIME"/>
-</a>
-<a href="https://github.com/Gorkem-Taha/MindCipher">
-  <img src="https://my-github-stats-nine-nu.vercel.app/api/pin/?username=Gorkem-Taha&repo=MindCipher&theme=github_dark&hide_border=true&bg_color=0d1117&description_lines_count=2" alt="MindCipher"/>
-</a>
-
-</div>
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| [**Machine Failure Detection**](https://github.com/Gorkem-Taha/Machine-Failure-Detection-Ensemble) | Predictive maintenance via ensemble ML & SHAP explainability | Python, XGBoost, SHAP |
+| [**G-Toolbox**](https://github.com/Gorkem-Taha/G-Toolbox) | System utilities & productivity scripts | Python, CLI |
+| [**VDOWNS-PRIME**](https://github.com/Gorkem-Taha/VDOWNS-PRIME) | High-performance automated media extraction tool | TypeScript, Automation |
+| [**MindCipher**](https://github.com/Gorkem-Taha/MindCipher) | Cryptography & security implementations | Backend, Security |
 
 ---
 
