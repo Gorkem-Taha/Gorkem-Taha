@@ -23,21 +23,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # Eklediğin Personal Access Token ile private repoyu klonluyoruz
           git clone -b VegaDeftwing-master https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/Gorkem-Taha/github-profile-trophy.git /tmp/trophy-server
           cd /tmp/trophy-server
 
-          # Yerel debug sunucusunu başlatıyoruz
           deno run --allow-net --allow-read --allow-env debug.ts &
           SERVER_PID=$!
 
-          # Sunucunun ayağa kalkması için bekle
           sleep 6
 
-          # SVG çıktısını alıp ana çalışma alanına kaydediyoruz
-          curl -s "http://localhost:8080/?username=${{ github.repository_owner }}&theme=onedark" -o $GITHUB_WORKSPACE/trophy.svg
+          # onedark teması, 6 sütunlu ferah dizilim ve dengeli kenar boşlukları
+          curl -s "http://localhost:8080/?username=${{ github.repository_owner }}&theme=onedark&column=6&margin-w=15&margin-h=15" -o $GITHUB_WORKSPACE/trophy.svg
 
-          # Sunucu sürecini sonlandırıyoruz
           kill $SERVER_PID || true
 
       - name: Check Generated File
