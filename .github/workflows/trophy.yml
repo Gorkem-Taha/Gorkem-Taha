@@ -1,0 +1,29 @@
+name: Update Trophies
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Her gece otomatik günceller
+  workflow_dispatch: # İstediğin zaman manuel çalıştırma butonu
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Trophy
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: 'username=Gorkem-Taha&theme=onedark' # İstediğin tema veya parametre
+          path: trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add trophy.svg
+          git commit -m "chore: update profile trophies" || exit 0
+          git push
