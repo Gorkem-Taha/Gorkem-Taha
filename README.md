@@ -82,19 +82,6 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 
 ---
 
-## Featured Projects
-
-## Featured Projects
-
-| Project | Description | Tech Stack |
-| :--- | :--- | :--- |
-| [**Machine Failure Detection**](https://github.com/Gorkem-Taha/Machine-Failure-Detection-Ensemble) | Predictive maintenance via ensemble ML & SHAP explainability | Python, XGBoost, SHAP |
-| [**G-Toolbox**](https://github.com/Gorkem-Taha/G-Toolbox) | System utilities & productivity scripts | Python, CLI |
-| [**VDOWNS-PRIME**](https://github.com/Gorkem-Taha/VDOWNS-PRIME) | High-performance automated media extraction tool | TypeScript, Automation |
-| [**MindCipher**](https://github.com/Gorkem-Taha/MindCipher) | Cryptography & security implementations | Backend, Security |
-
----
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d2137,100:0d1117&height=90&section=footer" width="100%"/>
 </div>
