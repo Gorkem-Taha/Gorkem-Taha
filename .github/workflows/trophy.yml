@@ -14,20 +14,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate Trophy SVG via Docker
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Generate Trophy SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Resmi trophy sunucusunu arka planda başlatıyoruz
-          docker run -d -p 8080:8080 --name trophy-server -e GITHUB_TOKEN ryoma0611/github-profile-trophy:latest
+          # Kendi güncel forkladığın repoyu ve branch'i klonluyoruz
+          git clone -b VegaDeftwing-master https://github.com/Gorkem-Taha/github-profile-trophy.git /tmp/trophy-server
+          cd /tmp/trophy-server
           
-          # Konteynerin hazır olması için bekle
+          # README'deki gibi yerel debug sunucusunu arka planda başlatıyoruz
+          deno run --allow-net --allow-read --allow-env debug.ts &
+          SERVER_PID=$!
+          
+          # Sunucunun başlaması için bekle
           sleep 6
           
-          # SVG'yi çekip dosyaya kaydet
-          curl -f -s "http://localhost:8080/?username=${{ github.repository_owner }}&theme=onedark" -o trophy.svg
+          # SVG çıktısını alıp ana repoya yazıyoruz
+          curl -s "http://localhost:8080/?username=${{ github.repository_owner }}&theme=onedark" -o $GITHUB_WORKSPACE/trophy.svg
           
-          docker stop trophy-server
+          # Sunucuyu kapat
+          kill $SERVER_PID || true
 
       - name: Check Generated File
         run: |
