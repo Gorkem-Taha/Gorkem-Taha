@@ -32,7 +32,7 @@
   <img src="./whoami.svg?v=wrapped" alt="Who Am I" width="100%" />
 </div>
 
-###Github Stats
+### Github Stats
 
 <div align="center">
   <img src="./stats.svg" alt="GitHub Stats" width="450" />
