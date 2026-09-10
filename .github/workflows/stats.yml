@@ -37,17 +37,10 @@ jobs:
         run: |
           curl -f -s "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" -o streak.svg
 
-      # 4. Activity Graph Kartı (Resmi Action ile)
-      - name: Generate Activity Graph
-        uses: Ashutosh00710/github-readme-activity-graph@3.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          THEME: github-dark-blue
-          BG_COLOR: 0d1117
-          HIDE_BORDER: true
-          FILENAME: activity-graph.svg
+      # 4. Activity Graph Kartı (Doğrudan API'den SVG Çekme)
+      - name: Download Activity Graph Card
+        run: |
+          curl -f -s "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=github-dark-blue&bg_color=0d1117&hide_border=true" -o activity-graph.svg
 
       # 5. Tüm SVG'leri Repoya Ekle
       - name: Commit & Push
