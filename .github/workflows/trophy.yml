@@ -24,8 +24,20 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git clone https://github.com/ryo-ma/github-profile-trophy.git /tmp/trophy-cli
-          # index.ts doğrudan terminale SVG basar
-          deno run --allow-net --allow-read --allow-env /tmp/trophy-cli/index.ts --username=${{ github.repository_owner }} --theme=onedark > trophy.svg
+          cd /tmp/trophy-cli
+          
+          # Arka planda sunucuyu başlatıyoruz
+          deno run --allow-net --allow-read --allow-env api/index.ts &
+          SERVER_PID=$!
+          
+          # Sunucunun ayağa kalkması için 5 saniye bekle
+          sleep 5
+          
+          # SVG çıktısını yerel endpoint'ten çekip trophy.svg'ye yaz
+          curl -s "http://localhost:8080/?username=${{ github.repository_owner }}&theme=onedark" -o $GITHUB_WORKSPACE/trophy.svg
+          
+          # Sunucuyu kapat
+          kill $SERVER_PID || true
 
       - name: Check Generated File
         run: |
