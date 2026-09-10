@@ -67,7 +67,7 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 <br/>
 
 <div align="center">
-  <img src="./activity-graph.svg" alt="Activity Graph" width="700" />
+  <img src="./activity-graph.svg?v=1" alt="Activity Graph" width="700" />
 </div>
 
 ---
