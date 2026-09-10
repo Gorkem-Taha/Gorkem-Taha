@@ -89,7 +89,9 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 <br/>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Gorkem-Taha&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" alt="streak"/>
+  <img src="./streak.svg" alt="GitHub Streak Stats" />
+</div>
+
 </div>
 
 <br/>
