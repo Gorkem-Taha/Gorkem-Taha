@@ -31,8 +31,6 @@
   <img src="./divider2.svg?v=neon1" alt="divider" width="100%" />
 </div>
 
-### Github Stats
-
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=24&duration=1&pause=1000&color=58A6FF&center=true&vCenter=true&width=400&height=50&lines=GitHub+Stats" alt="GitHub Stats" />
 </div>
@@ -65,7 +63,9 @@
   <img src="./divider2.svg?v=neon1" alt="divider" width="100%" />
 </div>
 
-### Contributions Snake
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=24&duration=1&pause=1000&color=58A6FF&center=true&vCenter=true&width=400&height=50&lines=Contributions+Snake" alt="Contributions Snake" />
+</div>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gorkem-Taha/Gorkem-Taha/output/github-snake-dark.svg"/>
