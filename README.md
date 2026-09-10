@@ -34,16 +34,6 @@
   <img src="./whoami.svg?v=wrapped" alt="Who Am I" width="100%" />
 </div>
 
-## Who am I
-
-I'm Görkem Taha — **OWog** in the digital world. 21 years old, and I spend every moment learning and exploring.
-
-I'm drawn to the aesthetics of art, the stories inside games, and the logical depth of software. For me, coding isn't just writing lines — it's the elegance you find when a problem finally breaks open cleanly. The same attention to detail I once put into my drawings, I now put into data pipelines and system architecture.
-
-Away from noise, I create. On my own terms, I move forward — a little more curious each day than the one before.
-
----
-
 ## GitHub Stats
 
 <div align="center">
