@@ -16,21 +16,73 @@ jobs:
         run: |
           python3 - << 'EOF'
           badges = [
-              ("badge-linkedin.svg", "LinkedIn", "#0A66C2"),
-              ("badge-portfolio.svg", "owog.dev", "#58a6ff"),
-              ("badge-medium.svg", "Medium", "#f0f6fc"),
-              ("badge-gmail.svg", "Gmail", "#EA4335"),
+              {
+                  "file": "badge-linkedin.svg",
+                  "label": "LinkedIn",
+                  "color": "#0A66C2",
+                  "width": 136,
+                  "icon": '<path fill="#0A66C2" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>'
+              },
+              {
+                  "file": "badge-portfolio.svg",
+                  "label": "owog.dev",
+                  "color": "#58a6ff",
+                  "width": 140,
+                  "icon": '<path fill="#58a6ff" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>'
+              },
+              {
+                  "file": "badge-medium.svg",
+                  "label": "Medium",
+                  "color": "#f0f6fc",
+                  "width": 132,
+                  "icon": '<path fill="#f0f6fc" d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>'
+              },
+              {
+                  "file": "badge-gmail.svg",
+                  "label": "Gmail",
+                  "color": "#EA4335",
+                  "width": 120,
+                  "icon": '<path fill="#EA4335" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>'
+              }
           ]
 
-          for filename, label, color in badges:
-              w = 140
-              svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="36" viewBox="0 0 {w} 36">
-                <rect width="{w}" height="36" rx="8" fill="#161b22" stroke="{color}" stroke-width="1.5"/>
-                <circle cx="18" cy="18" r="4" fill="{color}"/>
-                <text x="32" y="23" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="13" font-weight="600">{label}</text>
-              </svg>'''
-              with open(filename, "w", encoding="utf-8") as f:
+          for b in badges:
+              w = b["width"]
+              color = b["color"]
+              svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="38" viewBox="0 0 {w} 38">
+            <defs>
+              <style>
+                @keyframes pulseGlow {{
+                  0%, 100% {{
+                    stroke-opacity: 0.45;
+                    stroke-width: 1.2px;
+                  }}
+                  50% {{
+                    stroke-opacity: 1;
+                    stroke-width: 1.8px;
+                  }}
+                }}
+                .badge-border {{
+                  animation: pulseGlow 2.8s ease-in-out infinite;
+                }}
+              </style>
+            </defs>
+
+            <!-- Arka Plan ve Animasyonlu Kenarlık -->
+            <rect width="{w}" height="38" rx="8" fill="#161b22"/>
+            <rect width="{w}" height="38" rx="8" fill="none" stroke="{color}" class="badge-border"/>
+
+            <!-- Vektörel İkon -->
+            <g transform="translate(14, 9) scale(0.83)">
+              {b["icon"]}
+            </g>
+
+            <!-- Metin -->
+            <text x="44" y="24" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="0.3px">{b["label"]}</text>
+          </svg>'''
+              with open(b["file"], "w", encoding="utf-8") as f:
                   f.write(svg)
+          print("Tüm ikonlu ve animasyonlu butonlar olusturuldu.")
           EOF
 
       - name: Commit & Push
@@ -38,5 +90,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add badge-*.svg
-          git commit -m "chore: generate custom profile badges" || echo "No changes"
+          git commit -m "chore: add real brand icons and pulse animation to badges" || echo "No changes"
           git push
