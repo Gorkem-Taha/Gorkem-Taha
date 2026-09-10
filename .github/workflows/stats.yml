@@ -36,20 +36,18 @@ jobs:
       - name: Download Streak Card
         run: |
           curl -f -s "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" -o streak.svg
-
-# 4. Activity Graph Kartını Yerelde Üret
+      # 4. Activity Graph Kartını Yerelde Üret
       - name: Generate Activity Graph (Local Python)
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           python3 - << 'EOF'
-          import os, json, urllib.request, math
-          from datetime import datetime, timezone
+          import os, json, urllib.request
+          from datetime import datetime
 
           token = os.environ.get("GH_TOKEN")
           user = "${{ github.repository_owner }}"
 
-          # GitHub GraphQL API ile son commit verilerini çek
           query = """
           query($login: String!) {
             user(login: $login) {
@@ -77,38 +75,102 @@ jobs:
                   data = json.loads(resp.read().decode())
               days = [d for w in data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"] for d in w["contributionDays"]]
               last_30 = days[-30:]
-          except Exception as e:
-              last_30 = [{"contributionCount": 0} for _ in range(30)]
+          except Exception:
+              last_30 = [{"date": "2026-01-01", "contributionCount": 0} for _ in range(30)]
 
           counts = [d["contributionCount"] for d in last_30]
-          max_c = max(max(counts), 5)
-          w, h, pad_x, pad_y = 700, 220, 45, 40
+          dates = [datetime.strptime(d["date"], "%Y-%m-%d").strftime("%d %b") for d in last_30]
+          total_commits = sum(counts)
+          max_c = max(max(counts), 4)
+
+          w, h = 700, 260
+          pad_l, pad_r, pad_t, pad_b = 55, 30, 50, 40
+          plot_w = w - pad_l - pad_r
+          plot_h = h - pad_t - pad_b
+
           pts = []
           for i, c in enumerate(counts):
-              x = pad_x + (i * (w - 2 * pad_x) / (len(counts) - 1))
-              y = (h - pad_y) - (c * (h - 2 * pad_y) / max_c)
+              x = pad_l + (i * plot_w / (len(counts) - 1))
+              y = (pad_t + plot_h) - (c * plot_h / max_c)
               pts.append((x, y))
 
-          path_d = f"M {pts[0][0]},{pts[0][1]} " + " ".join(f"L {x:.1f},{y:.1f}" for x, y in pts[1:])
-          area_d = f"{path_d} L {pts[-1][0]},{h - pad_y} L {pts[0][0]},{h - pad_y} Z"
+          # Bezier yumuşak eğri oluşturma
+          def get_curved_path(points):
+              if len(points) < 2:
+                  return ""
+              path = f"M {points[0][0]:.1f},{points[0][1]:.1f}"
+              for i in range(len(points) - 1):
+                  p0 = points[i - 1] if i > 0 else points[i]
+                  p1 = points[i]
+                  p2 = points[i + 1]
+                  p3 = points[i + 2] if i + 2 < len(points) else p2
+
+                  cp1x = p1[0] + (p2[0] - p0[0]) / 6
+                  cp1y = p1[1] + (p2[1] - p0[1]) / 6
+                  cp2x = p2[0] - (p3[0] - p1[0]) / 6
+                  cp2y = p2[1] - (p3[1] - p1[1]) / 6
+
+                  path += f" C {cp1x:.1f},{cp1y:.1f} {cp2x:.1f},{cp2y:.1f} {p2[0]:.1f},{p2[1]:.1f}"
+              return path
+
+          path_d = get_curved_path(pts)
+          area_d = f"{path_d} L {pts[-1][0]:.1f},{pad_t + plot_h} L {pts[0][0]:.1f},{pad_t + plot_h} Z"
+
+          # Yatay ızgara (Grid) ve Y ekseni değerleri
+          grid_svg = ""
+          for div in [0.0, 0.5, 1.0]:
+              gy = (pad_t + plot_h) - (div * plot_h)
+              val = int(round(div * max_c))
+              grid_svg += f'<line x1="{pad_l}" y1="{gy:.1f}" x2="{w - pad_r}" y2="{gy:.1f}" stroke="#21262d" stroke-width="1" stroke-dasharray="3,3"/>'
+              grid_svg += f'<text x="{pad_l - 12}" y="{gy + 4:.1f}" fill="#6e7681" font-size="11" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial">{val}</text>'
+
+          # X ekseni tarih etiketleri (Başlangıç, Orta, Bitiş)
+          date_labels = [
+              (pad_l, dates[0], "start"),
+              (pad_l + plot_w / 2, dates[len(dates) // 2], "middle"),
+              (w - pad_r, dates[-1], "end")
+          ]
+          x_labels_svg = "".join([
+              f'<text x="{x:.1f}" y="{h - 14}" fill="#8b949e" font-size="11" text-anchor="{anchor}" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial">{label}</text>'
+              for x, label, anchor in date_labels
+          ])
+
+          # Zirve noktalarına küçük parlak daireler
+          points_svg = "".join([
+              f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="#58a6ff" stroke="#0d1117" stroke-width="1.5"/>'
+              for (x, y), c in zip(pts, counts) if c > 0
+          ])
 
           svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
-            <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
             <defs>
-              <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.4"/>
+              <linearGradient id="curveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35"/>
                 <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.0"/>
               </linearGradient>
             </defs>
-            <text x="{pad_x}" y="28" fill="#58a6ff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="600">Activity Graph (Last 30 Days)</text>
-            <path d="{area_d}" fill="url(#grad)"/>
-            <path d="{path_d}" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <line x1="{pad_x}" y1="{h - pad_y}" x2="{w - pad_x}" y2="{h - pad_y}" stroke="#30363d" stroke-width="1"/>
+
+            <!-- Arka Plan (Çerçevesiz) -->
+            <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
+
+            <!-- Başlık ve Metrikler -->
+            <text x="{pad_l}" y="28" fill="#58a6ff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial" font-size="14" font-weight="600">Activity Graph (Last 30 Days)</text>
+            <text x="{w - pad_r}" y="28" fill="#8b949e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial" font-size="12" text-anchor="end">{total_commits} contributions</text>
+
+            <!-- Izgara ve Eksenler -->
+            {grid_svg}
+            {x_labels_svg}
+
+            <!-- Grafik Alanı ve Eğri Çizgisi -->
+            <path d="{area_d}" fill="url(#curveGrad)"/>
+            <path d="{path_d}" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round"/>
+
+            <!-- Aktivite Noktaları -->
+            {points_svg}
           </svg>"""
 
           with open("activity-graph.svg", "w", encoding="utf-8") as f:
               f.write(svg)
-          print("activity-graph.svg basariyla olusturuldu.")
+          print("Cercevesiz detayli activity-graph.svg olusturuldu.")
           EOF
 
       # 5. Tüm SVG'leri Repoya Ekle
