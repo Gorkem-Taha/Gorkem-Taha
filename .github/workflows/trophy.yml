@@ -14,50 +14,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Generate Trophy SVG
+      - name: Generate Trophy SVG via Docker
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git clone https://github.com/ryo-ma/github-profile-trophy.git /tmp/trophy-cli
+          # Resmi trophy sunucusunu arka planda başlatıyoruz
+          docker run -d -p 8080:8080 --name trophy-server -e GITHUB_TOKEN ryoma0611/github-profile-trophy:latest
           
-          cat << 'EOF' > /tmp/trophy-cli/run.ts
-          import { GithubAPIClient } from "./github_api_client.ts";
-          import { Card } from "./card.ts";
-          import { CONSTANTS } from "./utils.ts";
-          import { COLORS } from "./theme.ts";
-
-          const client = new GithubAPIClient();
-          const username = Deno.env.get("TARGET_USER") || "Gorkem-Taha";
-          const userInfo = await client.requestUserInfo(username);
-
-          if (!userInfo) {
-            console.error("User not found or GitHub token invalid");
-            Deno.exit(1);
-          }
-
-          const card = new Card(
-            [],
-            [],
-            CONSTANTS.DEFAULT_MAX_COLUMN,
-            CONSTANTS.DEFAULT_MAX_ROW,
-            CONSTANTS.DEFAULT_PANEL_SIZE,
-            CONSTANTS.DEFAULT_MARGIN_W,
-            CONSTANTS.DEFAULT_MARGIN_H,
-          );
-
-          const svg = card.render(userInfo, (COLORS as any)["onedark"] || COLORS.default);
-          await Deno.writeTextFile("trophy.svg", svg);
-          console.log("trophy.svg generated successfully!");
-          EOF
-
-          cd /tmp/trophy-cli
-          TARGET_USER=${{ github.repository_owner }} deno run --allow-net --allow-read --allow-write --allow-env run.ts
-          cp trophy.svg $GITHUB_WORKSPACE/trophy.svg
+          # Konteynerin hazır olması için bekle
+          sleep 6
+          
+          # SVG'yi çekip dosyaya kaydet
+          curl -f -s "http://localhost:8080/?username=${{ github.repository_owner }}&theme=onedark" -o trophy.svg
+          
+          docker stop trophy-server
 
       - name: Check Generated File
         run: |
