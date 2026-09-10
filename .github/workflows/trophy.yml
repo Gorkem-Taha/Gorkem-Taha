@@ -25,12 +25,11 @@ jobs:
         run: |
           git clone https://github.com/ryo-ma/github-profile-trophy.git /tmp/trophy-cli
           
-          # Doğrudan kütüphane fonksiyonunu çağırıp SVG'yi üreten geçici script oluşturuyoruz
           cat << 'EOF' > /tmp/trophy-cli/run.ts
-          import { GithubAPIClient } from "./src/github_api_client.ts";
-          import { Card } from "./src/card.ts";
-          import { CONSTANTS } from "./src/utils.ts";
-          import { COLORS } from "./src/theme.ts";
+          import { GithubAPIClient } from "./github_api_client.ts";
+          import { Card } from "./card.ts";
+          import { CONSTANTS } from "./utils.ts";
+          import { COLORS } from "./theme.ts";
 
           const client = new GithubAPIClient();
           const username = Deno.env.get("TARGET_USER") || "Gorkem-Taha";
