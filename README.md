@@ -64,7 +64,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=24&duration=1&pause=1000&color=58A6FF&center=true&vCenter=true&width=400&height=50&lines=Contributions+Snake" alt="Contributions Snake" />
+  <img src="https://readme-typing-svg.demolab.com?font=Segoe+UI&weight=700&size=24&duration=1&pause=1000&color=04CE03&center=true&vCenter=true&width=400&height=50&lines=Contributions+Snake" alt="Contributions Snake" />
 </div>
 
 <picture>
