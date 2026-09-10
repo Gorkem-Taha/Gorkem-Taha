@@ -67,7 +67,7 @@ Away from noise, I create. On my own terms, I move forward — a little more cur
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gorkem-Taha&bg_color=0d1117&color=58a6ff&line=1f6feb&point=58a6ff&area=true&area_color=1f6feb&hide_border=true&custom_title=Contribution%20Activity" width="95%" alt="activity graph"/>
+  <img src="./activity-graph.svg" alt="Activity Graph" width="700" />
 </div>
 
 ---
