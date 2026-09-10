@@ -15,7 +15,7 @@ jobs:
       - name: Generate WhoAmI Terminal SVG
         run: |
           python3 - << 'EOF'
-          w, h = 820, 340
+          w, h = 880, 390
           
           svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="100%" height="{h}">
             <defs>
@@ -38,7 +38,7 @@ jobs:
                 .font-code {{
                   font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
                   font-size: 13px;
-                  letter-spacing: 0.2px;
+                  letter-spacing: 0.1px;
                 }}
 
                 .c-user {{ fill: #58a6ff; font-weight: 600; }}
@@ -48,15 +48,17 @@ jobs:
                 .c-blue {{ fill: #58a6ff; }}
                 .cursor {{ fill: #58a6ff; animation: blink 0.9s infinite; }}
 
-                /* Harf harf soldan sağa yumuşak daktilo animasyonları */
-                .anim-cmd   {{ animation: revealText 1.4s steps(22, end) 0.3s both; }}
-                .anim-line1 {{ animation: revealText 2.6s steps(55, end) 1.8s both; }}
-                .anim-line2 {{ animation: revealText 3.0s steps(60, end) 4.5s both; }}
-                .anim-line3 {{ animation: revealText 3.0s steps(60, end) 7.6s both; }}
-                .anim-line4 {{ animation: revealText 3.0s steps(60, end) 10.7s both; }}
-                .anim-line5 {{ animation: revealText 2.4s steps(48, end) 13.8s both; }}
-                .anim-line6 {{ animation: revealText 2.4s steps(48, end) 16.3s both; }}
-                .anim-final {{ animation: revealText 0.8s steps(15, end) 18.8s both; }}
+                .anim-cmd   {{ animation: revealText 1.2s steps(20, end) 0.2s both; }}
+                .anim-l1    {{ animation: revealText 2.4s steps(50, end) 1.5s both; }}
+                .anim-l2    {{ animation: revealText 2.4s steps(50, end) 4.0s both; }}
+                .anim-l3a   {{ animation: revealText 2.0s steps(42, end) 6.5s both; }}
+                .anim-l3b   {{ animation: revealText 2.0s steps(42, end) 8.6s both; }}
+                .anim-l4a   {{ animation: revealText 2.2s steps(45, end) 10.7s both; }}
+                .anim-l4b   {{ animation: revealText 2.0s steps(42, end) 13.0s both; }}
+                .anim-l5    {{ animation: revealText 1.2s steps(25, end) 15.1s both; }}
+                .anim-l6a   {{ animation: revealText 2.0s steps(40, end) 16.4s both; }}
+                .anim-l6b   {{ animation: revealText 1.8s steps(35, end) 18.5s both; }}
+                .anim-final {{ animation: revealText 0.6s steps(12, end) 20.4s both; }}
               </style>
             </defs>
 
@@ -77,42 +79,56 @@ jobs:
               </text>
             </g>
 
-            <!-- Metin Gövdesi -->
-            <g transform="translate(25, 102)" class="font-code c-text anim-line1">
+            <!-- Paragraf 1 -->
+            <g transform="translate(25, 102)" class="font-code c-text anim-l1">
               <text y="0">I'm Görkem Taha — <tspan class="c-blue">OWog</tspan> in the digital world. I spend every moment learning and exploring.</text>
             </g>
 
-            <g transform="translate(25, 138)" class="font-code c-text anim-line2">
+            <!-- Paragraf 2 -->
+            <g transform="translate(25, 138)" class="font-code c-text anim-l2">
               <text y="0">I'm drawn to the aesthetics of art, the stories inside games, and the logical depth of software.</text>
             </g>
 
-            <g transform="translate(25, 164)" class="font-code c-text anim-line3">
-              <text y="0">For me, coding isn't just writing lines — it's the elegance you find when a problem finally breaks open cleanly.</text>
+            <!-- Paragraf 3 (2 Satır) -->
+            <g transform="translate(25, 164)" class="font-code c-text anim-l3a">
+              <text y="0">For me, coding isn't just writing lines — it's the elegance you find</text>
+            </g>
+            <g transform="translate(25, 186)" class="font-code c-text anim-l3b">
+              <text y="0">when a problem finally breaks open cleanly.</text>
             </g>
 
-            <g transform="translate(25, 190)" class="font-code c-text anim-line4">
-              <text y="0">The same attention to detail I once put into my drawings, I now put into data pipelines and system architecture.</text>
+            <!-- Paragraf 4 (2 Satır) -->
+            <g transform="translate(25, 216)" class="font-code c-text anim-l4a">
+              <text y="0">The same attention to detail I once put into my drawings, I now put</text>
+            </g>
+            <g transform="translate(25, 238)" class="font-code c-text anim-l4b">
+              <text y="0">into data pipelines and system architecture.</text>
             </g>
 
-            <g transform="translate(25, 230)" class="font-code c-text anim-line5">
+            <!-- Paragraf 5 -->
+            <g transform="translate(25, 274)" class="font-code c-text anim-l5">
               <text y="0">Away from noise, I create.</text>
             </g>
 
-            <g transform="translate(25, 256)" class="font-code c-text anim-line6">
-              <text y="0">On my own terms, I move forward — a little more curious each day than the one before.</text>
+            <!-- Paragraf 6 (2 Satır) -->
+            <g transform="translate(25, 300)" class="font-code c-text anim-l6a">
+              <text y="0">On my own terms, I move forward — a little more curious each day</text>
+            </g>
+            <g transform="translate(25, 322)" class="font-code c-text anim-l6b">
+              <text y="0">than the one before.</text>
             </g>
 
             <!-- Bitiş Komut Satırı ve İmleç -->
-            <g transform="translate(25, 298)" class="font-code anim-final">
+            <g transform="translate(25, 360)" class="font-code anim-final">
               <text y="0">
-                <tspan class="c-user">owog@core</tspan><tspan class="c-path">:~$</tspan> <tspan class="cursor">_</tspan>
+                <tspan class="c-user">root@owog</tspan><tspan class="c-path">:~$</tspan> <tspan class="cursor">_</tspan>
               </text>
             </g>
           </svg>'''
 
           with open("whoami.svg", "w", encoding="utf-8") as f:
               f.write(svg)
-          print("Yeni akici whoami.svg uretildi.")
+          print("Hizalanmis whoami.svg uretildi.")
           EOF
 
       - name: Commit & Push
@@ -120,5 +136,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f whoami.svg
-          git commit -m "chore: update whoami terminal card with smooth typewriter" || echo "No changes"
+          git commit -m "chore: format whoami terminal text layout" || echo "No changes"
           git push
