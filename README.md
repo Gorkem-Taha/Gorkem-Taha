@@ -32,6 +32,8 @@
   <img src="./whoami.svg?v=wrapped" alt="Who Am I" width="100%" />
 </div>
 
+###Github Stats
+
 <div align="center">
   <img src="./stats.svg" alt="GitHub Stats" width="450" />
   &nbsp;&nbsp;
@@ -55,6 +57,8 @@
 <div align="center">
   <img src="./activity-graph.svg?v=1" alt="Activity Graph" width="700" />
 </div>
+
+### Contributions Snake
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gorkem-Taha/Gorkem-Taha/output/github-snake-dark.svg"/>
