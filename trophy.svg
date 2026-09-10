@@ -1,8 +1,8 @@
 
     <svg
-      width="660"
+      width="735"
       height="110"
-      viewBox="0 0 660 110"
+      viewBox="0 0 735 110"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -126,7 +126,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         </svg>
         
         <svg
-          x="110"
+          x="125"
           y="0"
           width="110"
           height="110"
@@ -205,7 +205,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         </svg>
         
         <svg
-          x="220"
+          x="250"
           y="0"
           width="110"
           height="110"
@@ -284,7 +284,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         </svg>
         
         <svg
-          x="330"
+          x="375"
           y="0"
           width="110"
           height="110"
@@ -327,7 +327,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
   
           <text x="50%" y="18" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="13" fill="#e5c07b">Repositories</text>
           <text x="50%" y="85" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10.5" fill="#e06c75">Middle Repo Creator</text>
-          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#e06c75">14pt</text>
+          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#e06c75">13pt</text>
           
     <style>
     @keyframes RepositoriesRankAnimation {
@@ -335,7 +335,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         width: 0px;
       }
       to {
-        width: 32px;
+        width: 24px;
       }
     }
     #Repositories-rank-progress{
@@ -363,7 +363,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         </svg>
         
         <svg
-          x="440"
+          x="500"
           y="0"
           width="110"
           height="110"
@@ -442,7 +442,7 @@ Created by potrace 1.15, written by Peter Selinger 2001-2017
         </svg>
         
         <svg
-          x="550"
+          x="625"
           y="0"
           width="110"
           height="110"
