@@ -37,7 +37,7 @@ jobs:
         run: |
           curl -f -s "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" -o streak.svg
 
-      # 4. Activity Graph Kartı (Yerel Metrics Action)
+# 4. Activity Graph Kartı
       - name: Generate Activity Graph
         uses: lowlighter/metrics@latest
         with:
@@ -50,11 +50,13 @@ jobs:
           plugin_activity_days: 14
           plugin_activity_filter: all
           config_timezone: Europe/Istanbul
-          output_action: none
 
-      # 5. Tüm SVG'leri Repoya Ekle
+      # 5. Dosyayı Kök Dizine Al ve Repoya Ekle
       - name: Commit & Push
         run: |
+          # Metrics bazen dosyayı .github/ veya metrics/ altına koyar, kök dizine taşıyalım:
+          find . -name "activity-graph.svg" -not -path "./activity-graph.svg" -exec mv {} ./activity-graph.svg \; || true
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add stats.svg top-langs.svg streak.svg activity-graph.svg
