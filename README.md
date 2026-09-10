@@ -33,7 +33,7 @@
 </div>
 
 <div align="center">
-  <img src="./divider.svg" alt="divider" width="100%" />
+  <img src="./divider.svg?v=neon1" alt="divider" width="100%" />
 </div>
 
 ### Github Stats
