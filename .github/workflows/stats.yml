@@ -106,9 +106,9 @@ jobs:
             <line x1="{pad_x}" y1="{h - pad_y}" x2="{w - pad_x}" y2="{h - pad_y}" stroke="#30363d" stroke-width="1"/>
           </svg>"""
 
-          with open("activity-graph1.svg", "w", encoding="utf-8") as f:
+          with open("activity-graph.svg", "w", encoding="utf-8") as f:
               f.write(svg)
-          print("activity-graph1.svg basariyla olusturuldu.")
+          print("activity-graph.svg basariyla olusturuldu.")
           EOF
 
       # 5. Tüm SVG'leri Repoya Ekle
@@ -116,6 +116,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add stats.svg top-langs.svg streak.svg activity-graph1.svg
+          git add stats.svg top-langs.svg streak.svg activity-graph.svg
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: update profile stats and activity graph"
           git push
