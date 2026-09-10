@@ -38,7 +38,7 @@ jobs:
           curl -f -s "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" -o streak.svg
       # 4. Activity Graph Kartı
       - name: Generate Activity Graph
-        uses: Ashutosh00710/github-readme-activity-graph@master
+        uses: Ashutosh00710/github-readme-activity-graph@main
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
