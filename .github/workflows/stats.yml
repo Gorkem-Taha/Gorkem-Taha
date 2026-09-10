@@ -36,23 +36,12 @@ jobs:
       - name: Download Streak Card
         run: |
           curl -f -s "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" -o streak.svg
-      # 4. Activity Graph Kartı
-      - name: Generate Activity Graph
-        uses: Ashutosh00710/github-readme-activity-graph@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          THEME: github-dark-blue
-          BG_COLOR: 0d1117
-          HIDE_BORDER: true
-          FILENAME: activity-graph.svg
 
-      # 5. Tüm SVG'leri Repoya Ekle
+      # 4. Dosyaları Repoya Ekle
       - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add stats.svg top-langs.svg streak.svg activity-graph.svg
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update profile stats and graphs"
+          git add stats.svg top-langs.svg streak.svg
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update profile stats and streak"
           git push
