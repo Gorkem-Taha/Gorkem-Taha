@@ -1,21 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 6" width="100%" height="6">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="100%" height="24">
   <defs>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0">
-        <animate attributeName="offset" values="-0.5; 1" dur="2.5s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.9">
-        <animate attributeName="offset" values="0; 1.5" dur="2.5s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0">
-        <animate attributeName="offset" values="0.5; 2" dur="2.5s" repeatCount="indefinite" />
-      </stop>
+    <style>
+      @keyframes beamMove {
+        0% {
+          transform: translateX(-300px);
+        }
+        100% {
+          transform: translateX(900px);
+        }
+      }
+
+      .beam {
+        animation: beamMove 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+    </style>
+
+    <!-- Neon parlama efekti -->
+    <filter id="neon-glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Kayan lazer gradyanı -->
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="1" />
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0" />
     </linearGradient>
   </defs>
 
-  <!-- Arka plan ince sabit hat -->
-  <line x1="0" y1="3" x2="900" y2="3" stroke="#21262d" stroke-width="1" />
+  <!-- Sabit, belirgin koyu gri arka plan hattı -->
+  <line x1="10" y1="12" x2="890" y2="12" stroke="#21262d" stroke-width="2" stroke-linecap="round" />
 
-  <!-- Üzerinden kayan parlak mavi ışık -->
-  <line x1="0" y1="3" x2="900" y2="3" stroke="url(#glow)" stroke-width="2" stroke-linecap="round" />
+  <!-- Hat üzerinde kayan parlak mavi neon lazer -->
+  <g class="beam">
+    <!-- Geniş dış ışıma -->
+    <rect x="0" y="9" width="220" height="6" fill="url(#laserGrad)" filter="url(#neon-glow)" rx="3" />
+    <!-- Çekirdek keskin ışık -->
+    <rect x="30" y="10.5" width="160" height="3" fill="#ffffff" opacity="0.8" rx="1.5" />
+  </g>
 </svg>
