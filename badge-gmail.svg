@@ -1,5 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="140" height="36" viewBox="0 0 140 36">
-      <rect width="140" height="36" rx="8" fill="#161b22" stroke="#EA4335" stroke-width="1.5"/>
-      <circle cx="18" cy="18" r="4" fill="#EA4335"/>
-      <text x="32" y="23" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,monospace" font-size="13" font-weight="600">Gmail</text>
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="38" viewBox="0 0 120 38">
+  <defs>
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% {
+          stroke-opacity: 0.45;
+          stroke-width: 1.2px;
+        }
+        50% {
+          stroke-opacity: 1;
+          stroke-width: 1.8px;
+        }
+      }
+      .badge-border {
+        animation: pulseGlow 2.8s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Arka Plan ve Animasyonlu Kenarlık -->
+  <rect width="120" height="38" rx="8" fill="#161b22"/>
+  <rect width="120" height="38" rx="8" fill="none" stroke="#EA4335" class="badge-border"/>
+
+  <!-- Vektörel İkon -->
+  <g transform="translate(14, 9) scale(0.83)">
+    <path fill="#EA4335" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+  </g>
+
+  <!-- Metin -->
+  <text x="44" y="24" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="0.3px">Gmail</text>
+</svg>
