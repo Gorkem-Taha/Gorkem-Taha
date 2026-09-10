@@ -30,6 +30,10 @@
 
 ---
 
+<div align="center">
+  <img src="./whoami.svg" alt="Who Am I" width="100%" />
+</div>
+
 ## Who am I
 
 I'm Görkem Taha — **OWog** in the digital world. 21 years old, and I spend every moment learning and exploring.
