@@ -28,8 +28,6 @@
 
 <br/>
 
----
-
 <div align="center">
   <img src="./whoami.svg?v=wrapped" alt="Who Am I" width="100%" />
 </div>
@@ -60,7 +58,6 @@
   <img src="./activity-graph.svg?v=1" alt="Activity Graph" width="700" />
 </div>
 
----
 
 ## Contribution Snake
 
@@ -70,7 +67,6 @@
   <img src="https://raw.githubusercontent.com/Gorkem-Taha/Gorkem-Taha/output/github-snake-dark.svg" width="100%" alt="snake"/>
 </picture>
 
----
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d2137,100:0d1117&height=90&section=footer" width="100%"/>
