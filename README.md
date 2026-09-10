@@ -31,7 +31,7 @@
 ---
 
 <div align="center">
-  <img src="./whoami.svg" alt="Who Am I" width="100%" />
+  <img src="./whoami.svg?v=wrapped" alt="Who Am I" width="100%" />
 </div>
 
 ## Who am I
