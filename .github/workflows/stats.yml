@@ -37,26 +37,83 @@ jobs:
         run: |
           curl -f -s "https://streak-stats.demolab.com?user=${{ github.repository_owner }}&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&card_width=700" -o streak.svg
 
-# 4. Activity Graph Kartı
-      - name: Generate Activity Graph
-        uses: lowlighter/metrics@latest
-        with:
-          filename: activity-graph.svg
-          token: ${{ secrets.GH_TOKEN }}
-          user: ${{ github.repository_owner }}
-          base: ""
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          config_timezone: Europe/Istanbul
+# 4. Activity Graph Kartını Yerelde Üret
+      - name: Generate Activity Graph (Local Python)
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          python3 - << 'EOF'
+          import os, json, urllib.request, math
+          from datetime import datetime, timezone
 
-      # 5. Dosyayı Kök Dizine Al ve Repoya Ekle
+          token = os.environ.get("GH_TOKEN")
+          user = "${{ github.repository_owner }}"
+
+          # GitHub GraphQL API ile son commit verilerini çek
+          query = """
+          query($login: String!) {
+            user(login: $login) {
+              contributionsCollection {
+                contributionCalendar {
+                  weeks {
+                    contributionDays {
+                      date
+                      contributionCount
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
+          req = urllib.request.Request(
+              "https://api.github.com/graphql",
+              data=json.dumps({"query": query, "variables": {"login": user}}).encode("utf-8"),
+              headers={"Authorization": f"Bearer {token}", "User-Agent": "Python"}
+          )
+
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  data = json.loads(resp.read().decode())
+              days = [d for w in data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"] for d in w["contributionDays"]]
+              last_30 = days[-30:]
+          except Exception as e:
+              last_30 = [{"contributionCount": 0} for _ in range(30)]
+
+          counts = [d["contributionCount"] for d in last_30]
+          max_c = max(max(counts), 5)
+          w, h, pad_x, pad_y = 700, 220, 45, 40
+          pts = []
+          for i, c in enumerate(counts):
+              x = pad_x + (i * (w - 2 * pad_x) / (len(counts) - 1))
+              y = (h - pad_y) - (c * (h - 2 * pad_y) / max_c)
+              pts.append((x, y))
+
+          path_d = f"M {pts[0][0]},{pts[0][1]} " + " ".join(f"L {x:.1f},{y:.1f}" for x, y in pts[1:])
+          area_d = f"{path_d} L {pts[-1][0]},{h - pad_y} L {pts[0][0]},{h - pad_y} Z"
+
+          svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
+            <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
+            <defs>
+              <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.0"/>
+              </linearGradient>
+            </defs>
+            <text x="{pad_x}" y="28" fill="#58a6ff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="600">Activity Graph (Last 30 Days)</text>
+            <path d="{area_d}" fill="url(#grad)"/>
+            <path d="{path_d}" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="{pad_x}" y1="{h - pad_y}" x2="{w - pad_x}" y2="{h - pad_y}" stroke="#30363d" stroke-width="1"/>
+          </svg>"""
+
+          with open("activity-graph.svg", "w", encoding="utf-8") as f:
+              f.write(svg)
+          print("activity-graph.svg basariyla olusturuldu.")
+          EOF
+
+      # 5. Tüm SVG'leri Repoya Ekle
       - name: Commit & Push
         run: |
-          # Metrics bazen dosyayı .github/ veya metrics/ altına koyar, kök dizine taşıyalım:
-          find . -name "activity-graph.svg" -not -path "./activity-graph.svg" -exec mv {} ./activity-graph.svg \; || true
-
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add stats.svg top-langs.svg streak.svg activity-graph.svg
