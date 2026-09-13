@@ -55,9 +55,13 @@
 </div>
 <br/>
 
-<div align="center">
-  <img src="./activity-graph.svg?v=1" alt="Activity Graph" width="700" />
-</div>
+ <table align="center">
+      <tr>
+        <td>
+          <img width="794" src="https://github.com/Gorkem-Taha/Gorkem-Taha/blob/main/profile-3d-contrib/profile-night-rainbow.svg" align="center"/>
+        </td>
+      </tr>
+ </table>
 
 <div align="center">
   <img src="./divider2.svg?v=neon1" alt="divider" width="100%" />
