@@ -5,7 +5,6 @@
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=750&height=50&lines=Architecting+high-performance+backend+systems.;Turning+complex+problems+into+simple+tools.;Privacy-first.+Zero+unnecessary+cloud+overhead.;Moving+forward+%E2%80%94+curious+each+day." alt="typing"/>
 </div>
-
 <br/>
 
 <div align="center">
