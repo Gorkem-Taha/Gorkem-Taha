@@ -2,7 +2,6 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0d2137,100:0d1117&height=200&section=header&text=Görkem%20Taha&fontSize=58&fontColor=58a6ff&animation=fadeIn&fontAlignY=40&desc=OWog&descAlignY=65&descSize=17&descColor=8b949e" width="100%" alt="header"/>
 </div>
 
-
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=750&height=50&lines=Architecting+high-performance+backend+systems.;Turning+complex+problems+into+simple+tools.;Privacy-first.+Zero+unnecessary+cloud+overhead.;Moving+forward+%E2%80%94+curious+each+day." alt="typing"/>
 </div>
